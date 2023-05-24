@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="ParkCinema.Views.UserControls.SessionsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ParkCinema.Views.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="800">
+    <Grid>
+        <Canvas>
+            <Label Content="Theater" Canvas.Left="70" Canvas.Top="35" FontSize="20" FontWeight="Bold" Foreground="Gold" HorizontalAlignment="Center" VerticalAlignment="Top" ></Label>
+            <TextBlock Text="{Binding Theater}" Canvas.Left="60" Canvas.Top="90" FontWeight="DemiBold" FontSize="22"></TextBlock>
+            <Label Content="MovieDate" Canvas.Left="237" Canvas.Top="35" FontSize="20" FontWeight="Bold" Foreground="Gold" HorizontalAlignment="Left" VerticalAlignment="Center" ></Label>
+            <TextBlock Text="{Binding MovieDate}" Canvas.Left="240" Canvas.Top="90" FontWeight="DemiBold" FontSize="22"></TextBlock>
+            <Label Content="Time" Canvas.Left="461" Canvas.Top="35" FontSize="20" FontWeight="Bold" Foreground="Gold" HorizontalAlignment="Left" VerticalAlignment="Center" ></Label>
+            <TextBlock Text="{Binding MovieDateTime}" Canvas.Left="451" Canvas.Top="90" FontWeight="DemiBold" FontSize="22"></TextBlock>
+            <Label Content="Price" Canvas.Left="650" Canvas.Top="35" FontSize="20" FontWeight="Bold" Foreground="Gold" ></Label>
+            <TextBlock Text="{Binding Price}" Canvas.Left="654" Canvas.Top="90" FontWeight="DemiBold" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Canvas.Left="685" FontSize="22" Foreground="White" Canvas.Top="90" Text="AZN" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        </Canvas>
+    </Grid>
+</UserControl>

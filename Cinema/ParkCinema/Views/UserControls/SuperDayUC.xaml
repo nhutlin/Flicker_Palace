@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="ParkCinema.Views.UserControls.SuperDayUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ParkCinema.Views.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Height="1300">
+    <Grid Background="Black">
+        <Button Style="{StaticResource logoButton}" Command="{Binding LogoClickCommand}" Panel.ZIndex="1" BorderThickness="0" Width="152" Height="178" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,-4,0,0">
+            <Image Stretch="Uniform" Source="/icons/logo.png" Height="89" Width="121"></Image>
+        </Button>
+        <Canvas>
+            <Image Stretch="Fill" Width="1400" Source="/images/movieback.jpg"></Image>
+            <Button Style="{StaticResource allButtons}" Command="{Binding AppleClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1249" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                <Image Source="/icons/apple.png"></Image>
+            </Button>
+            <Button Style="{StaticResource allButtons}"  Command="{Binding AndroidClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1294" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                <Image Source="/icons/android.png"></Image>
+            </Button>
+            <Button Style="{StaticResource allButtons}" Command="{Binding FaceBookClickCommand}" Width="50" Canvas.Top="250" Canvas.Left="1152" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image Source="/icons/facebook.png" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image.Effect>
+                        <DropShadowEffect ShadowDepth="3"></DropShadowEffect>
+                    </Image.Effect>
+                </Image>
+            </Button>
+            <Button Style="{StaticResource allButtons}" Command="{Binding TwitterClickCommand}" Width="50" Canvas.Top="250" Canvas.Left="1212" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image  Source="/icons/twitter.png" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image.Effect>
+                        <DropShadowEffect ShadowDepth="3"></DropShadowEffect>
+                    </Image.Effect>
+                </Image>
+            </Button>
+            <Button Style="{StaticResource allButtons}" Command="{Binding YoutubeClickCommand}" Width="80" Canvas.Top="256" Canvas.Left="1265">
+                <Image Source="/icons/youtube.png" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image.Effect>
+                        <DropShadowEffect Color="WhiteSmoke" ShadowDepth="2" Direction="200"></DropShadowEffect>
+                    </Image.Effect>
+                </Image>
+            </Button>
+            <TextBlock Margin="100,260,0,0" FontWeight="ExtraBlack" FontSize="40" Foreground="White" Text="Campaings"></TextBlock>
+            <TextBlock Margin="100,400,0,0" TextWrapping="Wrap" Width="500" Foreground="White" FontSize="20" Text="This tariff is actual in Park Cinema Metropark, Flame Towers, Park Cinema Park Bulvar, Park Cinema Aygun Mall and Park Cinema Zagulba Mall."></TextBlock>
+            <TextBlock Margin="100,500,0,0" TextWrapping="Wrap" Width="500" Foreground="White" FontSize="20" Text="This tariff is not eligible on non-working days.
+Note: these prices could not be available for some movies"></TextBlock>
+            <TextBlock Margin="100,600,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             2D – 5AZN"></TextBlock>
+            <TextBlock Margin="100,620,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             3D – 5 AZN"></TextBlock>
+            <TextBlock Margin="100,640,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             AZE/TURK 2D – 5 AZN"></TextBlock>
+            <TextBlock Margin="100,660,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             AZE/TURK 'LASER' 2D – 5 AZN"></TextBlock>
+            <TextBlock Margin="100,680,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'LASER' 3D – 5 AZN"></TextBlock>
+            <TextBlock Margin="100,700,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'LASER' 3D – 5 AZN"></TextBlock>
+            <TextBlock Margin="100,720,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'DOLBY' 2D – 5 AZN"></TextBlock>
+            <TextBlock Margin="100,740,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'DOLBY' 3D – 5 AZN"></TextBlock>
+            <Button Command="{Binding HappyClickCommand}" Style="{StaticResource allButtons}" Margin="990,350,0,200" Width="300" Height="350">
+                <Image Stretch="Fill" Source="/Images/happyhours.png"></Image>
+            </Button>
+            <Button Style="{StaticResource allButtons}" Margin="990,800,0,0" Width="300" Height="350">
+                <Image Stretch="Fill" Source="/Images/superday.png"></Image>
+            </Button>
+            <Canvas Margin="-60,1200,0,0" Height="100" Width="1450" Background="#2b3236">
+                <Label Margin="80,20,0,0" Foreground="DarkGray">© Park Cinema, 2023</Label>
+                <Image Height="30" Width="30" Margin="82,50,0,0" Source="/icons/visa.png"></Image>
+                <Image Height="30" Width="30" Margin="117,50,0,0" Source="/icons/master.png"></Image>
+                <Label Width="250" Height="100" Margin="1200,0,0,0" Background="#6e6d6d">
+                    <Button Command="{Binding LogoClickCommand}" Style="{StaticResource allButtons}" Width="150" Height="80">
+                        <Image  Stretch="Uniform" Source="/icons/logogray.png"></Image>
+                    </Button>
+                </Label>
+            </Canvas>
+        </Canvas>
+    </Grid>
+</UserControl>
