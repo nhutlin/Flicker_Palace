@@ -9,8 +9,8 @@ namespace Server
 {
     internal class DBConnection
     {
-        private string sql_conn = @"Data Source=TRITUONG;Initial Catalog=FLICKERPALACE;Integrated Security=True";
-        public SqlConnection GetConnection()
+        private static string sql_conn = @"Data Source=TRITUONG;Initial Catalog=FLICKERPALACE;Integrated Security=True";
+        public static SqlConnection GetConnection()
         {
             return new SqlConnection(sql_conn);
         }
