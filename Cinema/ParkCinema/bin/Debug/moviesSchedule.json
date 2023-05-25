@@ -1,0 +1,956 @@
+[
+  {
+    "MovieName": "Shazam! Fury of the Gods",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:16:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 1
+  },
+  {
+    "MovieName": "Shazam! Fury of the Gods",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:16:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 2
+  },
+  {
+    "MovieName": "Shazam! Fury of the Gods",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:16:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 3
+  },
+  {
+    "MovieName": "Shazam! Fury of the Gods",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:16:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 4
+  },
+  {
+    "MovieName": "Shazam! Fury of the Gods",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "02:16:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 5
+  },
+  {
+    "MovieName": "Forever",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 6
+  },
+  {
+    "MovieName": "Forever",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 7
+  },
+  {
+    "MovieName": "Forever",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 8
+  },
+  {
+    "MovieName": "Forever",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 9
+  },
+  {
+    "MovieName": "The LockSmith",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:20:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 10
+  },
+  {
+    "MovieName": "The LockSmith",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:20:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 11
+  },
+  {
+    "MovieName": "The LockSmith",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:20:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 12
+  },
+  {
+    "MovieName": "The LockSmith",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:20:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 13
+  },
+  {
+    "MovieName": "The LockSmith",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "6:00 PM",
+    "Duration": "02:20:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 14
+  },
+  {
+    "MovieName": "The LockSmith",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:20:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 14
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 15
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 16
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 17
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 17
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 18
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 19
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 20
+  },
+  {
+    "MovieName": "Evdə qalmış",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "01:40:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 21
+  },
+  {
+    "MovieName": "Evdə qalmış",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "01:40:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 22
+  },
+  {
+    "MovieName": "Evdə qalmış",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "01:40:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 23
+  },
+  {
+    "MovieName": "Evdə qalmış",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "01:40:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 24
+  },
+  {
+    "MovieName": "Evdə qalmış",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "01:40:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 25
+  },
+  {
+    "MovieName": "Evdə qalmış",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "01:40:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 26
+  },
+  {
+    "MovieName": "Scream 6",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 26
+  },
+  {
+    "MovieName": "Scream 6",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 27
+  },
+  {
+    "MovieName": "Scream 6",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 28
+  },
+  {
+    "MovieName": "Scream 6",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 29
+  },
+  {
+    "MovieName": "Scream 6",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 30
+  },
+  {
+    "MovieName": "Scream 6",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 31
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 32
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 33
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 34
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 35
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 36
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 37
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 38
+  },
+  {
+    "MovieName": "Uçuş 811",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:15:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 39
+  },
+  {
+    "MovieName": "Uçuş 811",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:15:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 40
+  },
+  {
+    "MovieName": "Uçuş 811",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:15:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 40
+  },
+  {
+    "MovieName": "Uçuş 811",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:15:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 41
+  },
+  {
+    "MovieName": "Uçuş 811",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:15:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 42
+  },
+  {
+    "MovieName": "Uçuş 811",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:15:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 43
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 44
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 45
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 46
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 47
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 48
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "10:00 AM",
+    "Duration": "02:40:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 49
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 50
+  },
+  {
+    "MovieName": "Ant-Man and the Wasp: Quantumania",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:05:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 51
+  },
+  {
+    "MovieName": "Ant-Man and the Wasp: Quantumania",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:16:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 52
+  },
+  {
+    "MovieName": "Ant-Man and the Wasp: Quantumania",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:05:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 53
+  },
+  {
+    "MovieName": "Ant-Man and the Wasp: Quantumania",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:05:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 54
+  },
+  {
+    "MovieName": "Ant-Man and the Wasp: Quantumania",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:05:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 55
+  },
+  {
+    "MovieName": "Prestij Meselesi",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 56
+  },
+  {
+    "MovieName": "Prestij Meselesi",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 57
+  },
+  {
+    "MovieName": "Prestij Meselesi",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 58
+  },
+  {
+    "MovieName": "Prestij Meselesi",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 59
+  },
+  {
+    "MovieName": "Prestij Meselesi",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 60
+  },
+  {
+    "MovieName": "Prestij Meselesi",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 61
+  },
+  {
+    "MovieName": "Prestij Meselesi",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:00:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 62
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 63
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 64
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 65
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 66
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 67
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 68
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9.0,
+    "Theater": "MetroPark",
+    "Id": 69
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 70
+  },
+  {
+    "MovieName": "Passengers",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 71
+  },
+  {
+    "MovieName": "Passengers",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 72
+  },
+  {
+    "MovieName": "Passengers",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 73
+  },
+  {
+    "MovieName": "Passengers",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 74
+  },
+  {
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 75
+  },
+  {
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 76
+  },
+  {
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 77
+  },
+  {
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 78
+  },
+  {
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 79
+  },
+  {
+    "MovieName": "Chernobyl",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "00:56:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 80
+  },
+  {
+    "MovieName": "Chernobyl",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "00:56:00",
+    "Price": 9.0,
+    "Theater": "Park Bulvar",
+    "Id": 81
+  },
+  {
+    "MovieName": "Chernobyl",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "00:56:00",
+    "Price": 9.0,
+    "Theater": "Deniz Mall",
+    "Id": 82
+  },
+  {
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8.0,
+    "Theater": "Deniz Mall",
+    "Id": 83
+  },
+  {
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8.0,
+    "Theater": "Deniz Mall",
+    "Id": 84
+  },
+  {
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8.0,
+    "Theater": "Park Bulvar",
+    "Id": 85
+  },
+  {
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8.0,
+    "Theater": "MetroPark",
+    "Id": 86
+  },
+  {
+    "MovieName": "Yedinci Koğuştaki Mucize",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "03:30:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 87
+  },
+  {
+    "MovieName": "Yedinci Koğuştaki Mucize",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:30:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 88
+  },
+  {
+    "MovieName": "Yedinci Koğuştaki Mucize",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "03:30:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 89
+  },
+  {
+    "MovieName": "Yedinci Koğuştaki Mucize",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:30:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 90
+  },
+  {
+    "MovieName": "Bergen",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "03:00:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 91
+  },
+  {
+    "MovieName": "Bergen",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "12:00 PM",
+    "Duration": "03:00:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 92
+  },
+  {
+    "MovieName": "Bergen",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "03:00:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 93
+  },
+  {
+    "MovieName": "Bergen",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:00:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 94
+  },
+  {
+    "MovieName": "Wonder",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 95
+  },
+  {
+    "MovieName": "Wonder",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "12:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 96
+  },
+  {
+    "MovieName": "Wonder",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 97
+  },
+  {
+    "MovieName": "Wonder",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 98
+  },
+  {
+    "MovieName": "The Fault In Our Stars",
+    "MovieDate": "5/25/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:45:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 99
+  },
+  {
+    "MovieName": "The Fault In Our Stars",
+    "MovieDate": "5/26/2023",
+    "MovieDateTime": "12:00 PM",
+    "Duration": "02:45:00",
+    "Price": 10.0,
+    "Theater": "Deniz Mall",
+    "Id": 100
+  },
+  {
+    "MovieName": "The Fault In Our Stars",
+    "MovieDate": "5/27/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:45:00",
+    "Price": 10.0,
+    "Theater": "MetroPark",
+    "Id": 101
+  },
+  {
+    "MovieName": "The Fault In Our Stars",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:45:00",
+    "Price": 10.0,
+    "Theater": "Park Bulvar",
+    "Id": 102
+  }
+]
