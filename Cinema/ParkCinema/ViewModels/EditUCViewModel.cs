@@ -337,20 +337,26 @@ namespace ParkCinema.ViewModels
                     string jsonString = File.ReadAllText("movies.json");
 
                     var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
-
-                    var element = data.FirstOrDefault(e => e.Id == item.Id);
-
-                    element.MovieName = Title;
-                    element.MovieGenre = Genre;
-                    element.MoviePrice = Price;
-                    element.MovieDirector = Director;
-                    element.Age = AgeLimit;
-                    element.MovieCountry = Country;
-                    element.MovieDuration = Duration;
-                    element.MovieLanguages = Language;
-                    element.MovieYear = Year;
-                    element.ImagePath = ImagePath;
-                    element.About = MovieAbout;
+                    data.Add(item);
+                    //var element = data.FirstOrDefault(e => e.Id == item.Id);
+                    //try
+                    //{
+                    //    element.MovieName = item.MovieName;
+                    //    element.MovieGenre = Genre;
+                    //    element.MoviePrice = Price;
+                    //    element.MovieDirector = Director;
+                    //    element.Age = AgeLimit;
+                    //    element.MovieCountry = Country;
+                    //    element.MovieDuration = Duration;
+                    //    element.MovieLanguages = Language;
+                    //    element.MovieYear = Year;
+                    //    element.ImagePath = ImagePath;
+                    //    element.About = MovieAbout;
+                    //}
+                    //catch
+                    //{
+                    //    MessageBox.Show("da save");
+                    //}
                     jsonString = JsonConvert.SerializeObject(data);
 
                     File.WriteAllText("movies.json", jsonString);
@@ -430,6 +436,7 @@ namespace ParkCinema.ViewModels
             SaveSeatsCommand = new RelayCommand((obj) =>
             {
                 SaveSeats();
+ 
             });
 
             SaveChangesCommand = new RelayCommand((obj) =>
@@ -442,15 +449,12 @@ namespace ParkCinema.ViewModels
             });
             CloseEditCommand = new RelayCommand((obj) =>
             {
-                if(App.MyGrid.Children.Count > 2)
-                {
-                    App.MyGrid.Children.RemoveAt(2);
-                    App.MyGrid.Children.RemoveAt(1);
-                }
-                else
-                {
-                App.MyGrid.Children.RemoveAt(1);
-                }
+                var uc2 = new AdminUC();
+                var vm2 = new AdminUCViewModel();
+                vm2.MainPartVisibility = Visibility.Visible;
+                uc2.DataContext = vm2;
+                App.MyGrid.Children.Clear();
+                App.MyGrid.Children.Add(uc2);
             });
             PlotClickCommand = new RelayCommand((obj) =>
             {

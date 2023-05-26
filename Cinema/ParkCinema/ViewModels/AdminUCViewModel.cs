@@ -67,7 +67,7 @@ namespace ParkCinema.ViewModels
             AllMovies = new ObservableCollection<Movie>(App.MovieRepo.Movies);
             LoginCommand = new RelayCommand((obj) =>
             {
-                if (Email == "sevilsariyeva@gmail.com" && Password == "sevil2023")
+                if (Email == "an@gmail.com" && Password == "123")
                 {
                     PasswordSideVisibility = Visibility.Hidden;
                     MainPartVisibility= Visibility.Visible;

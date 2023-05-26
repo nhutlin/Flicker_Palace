@@ -35,10 +35,23 @@ namespace ParkCinema.Services
 
                     var myMovie = new Movie
                     {
-                        About = SingleData.Plot,
-                        ImagePath = SingleData.Poster,
                         MovieName = SingleData.Title,
+                        MovieDate = "",
+                        MovieFormat = "",
+                        MovieLanguages = SingleData.Language,
+                        Age = "",
+                        ImagePath = SingleData.Poster,
+                        MovieCondition = "soon",
+                        MovieCountry = SingleData.Country,
+                        MovieDirector = SingleData.Director,
+                        MovieGenre= SingleData.Genre,
+                        MovieActors = SingleData.Actors,
+                        About = SingleData.Plot,
+                        MovieDuration = SingleData.Runtime,
+                        MovieYear = SingleData.Year,
                         Rating = SingleData.imdbRating,
+                        MoviePrice = 0,
+
                     };
                     movies.Add(myMovie);
                 }

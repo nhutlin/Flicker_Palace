@@ -20,7 +20,7 @@
                     FontWeight="ExtraBlack" Width="200">Search</Button>
         </StackPanel>
 
-        <Button Grid.Row="1" Command="{Binding BackToUserCommand}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="1000,10,0,0" Width="150" Height="40" Content="Back To User Side" FontSize="16" FontWeight="Bold" Style="{StaticResource mainButtons}" Background="DarkRed" Foreground="White"></Button>
+        <Button Command="{Binding BackToAdminCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1355,10,0,0" Width="283" Height="40" Content="Back To Admin Side" FontSize="16" FontWeight="Bold" Style="{StaticResource mainButtons}" Background="DarkRed" Foreground="White"/>
 
     </Grid>
 </UserControl>

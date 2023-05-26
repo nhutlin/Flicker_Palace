@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace ParkCinema.ViewModels
@@ -21,7 +22,7 @@ namespace ParkCinema.ViewModels
         }
 
         public RelayCommand SearchCommand { get; set; }
-        public RelayCommand BackToUserCommand { get; set; }
+        public RelayCommand BackToAdminCommand { get; set; }
 
         public WrapPanel MyPanel { get; set; }
 
@@ -47,12 +48,13 @@ namespace ParkCinema.ViewModels
                     
                 }
             });
-            BackToUserCommand = new RelayCommand((obj) =>
+            BackToAdminCommand = new RelayCommand((obj) =>
             {
-                var uc = new HomeUC();
-                var vm = new HomeUCViewModel();
+                var uc = new AdminUC();
+                var vm = new AdminUCViewModel();
+                vm.MainPartVisibility = Visibility.Visible;
                 uc.DataContext = vm;
-                App.MyGrid.Children.RemoveAt(0);
+                App.MyGrid.Children.Clear();
                 App.MyGrid.Children.Add(uc);
             });
         }

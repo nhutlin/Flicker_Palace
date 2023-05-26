@@ -1,7 +1,7 @@
 [
   {
     "MovieName": "Shazam! Fury of the Gods",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:16:00",
     "Price": 9.0,
@@ -10,7 +10,7 @@
   },
   {
     "MovieName": "Shazam! Fury of the Gods",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:16:00",
     "Price": 9.0,
@@ -19,7 +19,7 @@
   },
   {
     "MovieName": "Shazam! Fury of the Gods",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:16:00",
     "Price": 9.0,
@@ -28,7 +28,7 @@
   },
   {
     "MovieName": "Shazam! Fury of the Gods",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:16:00",
     "Price": 9.0,
@@ -37,7 +37,7 @@
   },
   {
     "MovieName": "Shazam! Fury of the Gods",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "2:00 PM",
     "Duration": "02:16:00",
     "Price": 9.0,
@@ -46,7 +46,7 @@
   },
   {
     "MovieName": "Forever",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -55,7 +55,7 @@
   },
   {
     "MovieName": "Forever",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -64,7 +64,7 @@
   },
   {
     "MovieName": "Forever",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -73,7 +73,7 @@
   },
   {
     "MovieName": "Forever",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -82,7 +82,7 @@
   },
   {
     "MovieName": "The LockSmith",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:20:00",
     "Price": 10.0,
@@ -91,7 +91,7 @@
   },
   {
     "MovieName": "The LockSmith",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:20:00",
     "Price": 10.0,
@@ -100,7 +100,7 @@
   },
   {
     "MovieName": "The LockSmith",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:20:00",
     "Price": 10.0,
@@ -109,7 +109,7 @@
   },
   {
     "MovieName": "The LockSmith",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:20:00",
     "Price": 10.0,
@@ -118,7 +118,7 @@
   },
   {
     "MovieName": "The LockSmith",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "6:00 PM",
     "Duration": "02:20:00",
     "Price": 10.0,
@@ -127,7 +127,7 @@
   },
   {
     "MovieName": "The LockSmith",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:20:00",
     "Price": 10.0,
@@ -136,7 +136,7 @@
   },
   {
     "MovieName": "Epic Tales",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
     "Price": 7.0,
@@ -145,7 +145,7 @@
   },
   {
     "MovieName": "Epic Tales",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
     "Price": 7.0,
@@ -154,15 +154,6 @@
   },
   {
     "MovieName": "Epic Tales",
-    "MovieDate": "5/27/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
-    "Id": 17
-  },
-  {
-    "MovieName": "Epic Tales",
     "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
@@ -173,6 +164,15 @@
   {
     "MovieName": "Epic Tales",
     "MovieDate": "5/29/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7.0,
+    "Theater": "MetroPark",
+    "Id": 17
+  },
+  {
+    "MovieName": "Epic Tales",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
     "Price": 7.0,
@@ -181,7 +181,7 @@
   },
   {
     "MovieName": "Epic Tales",
-    "MovieDate": "5/30/2023",
+    "MovieDate": "5/31/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
     "Price": 7.0,
@@ -190,7 +190,7 @@
   },
   {
     "MovieName": "Epic Tales",
-    "MovieDate": "5/31/2023",
+    "MovieDate": "6/1/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
     "Price": 7.0,
@@ -199,7 +199,7 @@
   },
   {
     "MovieName": "Evdə qalmış",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "01:40:00",
     "Price": 10.0,
@@ -208,7 +208,7 @@
   },
   {
     "MovieName": "Evdə qalmış",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "01:40:00",
     "Price": 10.0,
@@ -217,7 +217,7 @@
   },
   {
     "MovieName": "Evdə qalmış",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "01:40:00",
     "Price": 10.0,
@@ -226,7 +226,7 @@
   },
   {
     "MovieName": "Evdə qalmış",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "01:40:00",
     "Price": 10.0,
@@ -235,7 +235,7 @@
   },
   {
     "MovieName": "Evdə qalmış",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "01:40:00",
     "Price": 10.0,
@@ -244,7 +244,7 @@
   },
   {
     "MovieName": "Evdə qalmış",
-    "MovieDate": "5/30/2023",
+    "MovieDate": "5/31/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "01:40:00",
     "Price": 10.0,
@@ -253,7 +253,7 @@
   },
   {
     "MovieName": "Scream 6",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -262,7 +262,7 @@
   },
   {
     "MovieName": "Scream 6",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -271,7 +271,7 @@
   },
   {
     "MovieName": "Scream 6",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -280,7 +280,7 @@
   },
   {
     "MovieName": "Scream 6",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -289,7 +289,7 @@
   },
   {
     "MovieName": "Scream 6",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -298,7 +298,7 @@
   },
   {
     "MovieName": "Scream 6",
-    "MovieDate": "5/30/2023",
+    "MovieDate": "5/31/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -307,7 +307,7 @@
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -316,7 +316,7 @@
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -325,7 +325,7 @@
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -334,7 +334,7 @@
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -343,7 +343,7 @@
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -352,7 +352,7 @@
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/30/2023",
+    "MovieDate": "5/31/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -361,7 +361,7 @@
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/31/2023",
+    "MovieDate": "6/1/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
     "Price": 9.0,
@@ -370,7 +370,7 @@
   },
   {
     "MovieName": "Uçuş 811",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:15:00",
     "Price": 10.0,
@@ -379,7 +379,7 @@
   },
   {
     "MovieName": "Uçuş 811",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:15:00",
     "Price": 10.0,
@@ -388,7 +388,7 @@
   },
   {
     "MovieName": "Uçuş 811",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:15:00",
     "Price": 10.0,
@@ -397,7 +397,7 @@
   },
   {
     "MovieName": "Uçuş 811",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:15:00",
     "Price": 10.0,
@@ -406,7 +406,7 @@
   },
   {
     "MovieName": "Uçuş 811",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:15:00",
     "Price": 10.0,
@@ -415,7 +415,7 @@
   },
   {
     "MovieName": "Uçuş 811",
-    "MovieDate": "5/30/2023",
+    "MovieDate": "5/31/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:15:00",
     "Price": 10.0,
@@ -424,7 +424,7 @@
   },
   {
     "MovieName": "Cocaine Bear",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:40:00",
     "Price": 9.0,
@@ -433,7 +433,7 @@
   },
   {
     "MovieName": "Cocaine Bear",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:40:00",
     "Price": 9.0,
@@ -442,7 +442,7 @@
   },
   {
     "MovieName": "Cocaine Bear",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:40:00",
     "Price": 9.0,
@@ -451,7 +451,7 @@
   },
   {
     "MovieName": "Cocaine Bear",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:40:00",
     "Price": 9.0,
@@ -460,7 +460,7 @@
   },
   {
     "MovieName": "Cocaine Bear",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:40:00",
     "Price": 9.0,
@@ -469,7 +469,7 @@
   },
   {
     "MovieName": "Cocaine Bear",
-    "MovieDate": "5/30/2023",
+    "MovieDate": "5/31/2023",
     "MovieDateTime": "10:00 AM",
     "Duration": "02:40:00",
     "Price": 9.0,
@@ -478,7 +478,7 @@
   },
   {
     "MovieName": "Cocaine Bear",
-    "MovieDate": "5/31/2023",
+    "MovieDate": "6/1/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:40:00",
     "Price": 9.0,
@@ -487,7 +487,7 @@
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
     "Price": 9.0,
@@ -496,7 +496,7 @@
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:16:00",
     "Price": 9.0,
@@ -505,7 +505,7 @@
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
     "Price": 9.0,
@@ -514,7 +514,7 @@
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
     "Price": 9.0,
@@ -523,7 +523,7 @@
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
     "Price": 9.0,
@@ -532,7 +532,7 @@
   },
   {
     "MovieName": "Prestij Meselesi",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -541,7 +541,7 @@
   },
   {
     "MovieName": "Prestij Meselesi",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -550,7 +550,7 @@
   },
   {
     "MovieName": "Prestij Meselesi",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -559,7 +559,7 @@
   },
   {
     "MovieName": "Prestij Meselesi",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -568,7 +568,7 @@
   },
   {
     "MovieName": "Prestij Meselesi",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -577,7 +577,7 @@
   },
   {
     "MovieName": "Prestij Meselesi",
-    "MovieDate": "5/29/2023",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -586,7 +586,7 @@
   },
   {
     "MovieName": "Prestij Meselesi",
-    "MovieDate": "5/30/2023",
+    "MovieDate": "5/31/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
     "Price": 10.0,
@@ -595,7 +595,7 @@
   },
   {
     "MovieName": "Gifted",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "03:00:00",
     "Price": 9.0,
@@ -604,7 +604,7 @@
   },
   {
     "MovieName": "Gifted",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "03:00:00",
     "Price": 9.0,
@@ -613,7 +613,7 @@
   },
   {
     "MovieName": "Gifted",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "03:00:00",
     "Price": 9.0,
@@ -622,7 +622,7 @@
   },
   {
     "MovieName": "Gifted",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "03:00:00",
     "Price": 9.0,
@@ -631,7 +631,7 @@
   },
   {
     "MovieName": "Kutsal Damacana 4",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "01:50:00",
     "Price": 9.0,
@@ -640,7 +640,7 @@
   },
   {
     "MovieName": "Kutsal Damacana 4",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:50:00",
     "Price": 9.0,
@@ -649,7 +649,7 @@
   },
   {
     "MovieName": "Kutsal Damacana 4",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:50:00",
     "Price": 9.0,
@@ -658,7 +658,7 @@
   },
   {
     "MovieName": "Kutsal Damacana 4",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "01:50:00",
     "Price": 9.0,
@@ -667,7 +667,7 @@
   },
   {
     "MovieName": "Passengers",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -676,7 +676,7 @@
   },
   {
     "MovieName": "Passengers",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -685,7 +685,7 @@
   },
   {
     "MovieName": "Passengers",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -694,7 +694,7 @@
   },
   {
     "MovieName": "Passengers",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -703,7 +703,7 @@
   },
   {
     "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "2:00 PM",
     "Duration": "03:10:00",
     "Price": 10.0,
@@ -712,7 +712,7 @@
   },
   {
     "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "03:10:00",
     "Price": 10.0,
@@ -721,7 +721,7 @@
   },
   {
     "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "03:10:00",
     "Price": 10.0,
@@ -730,7 +730,7 @@
   },
   {
     "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "03:10:00",
     "Price": 10.0,
@@ -739,7 +739,7 @@
   },
   {
     "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "2:00 PM",
     "Duration": "03:10:00",
     "Price": 10.0,
@@ -748,7 +748,7 @@
   },
   {
     "MovieName": "Chernobyl",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "00:56:00",
     "Price": 9.0,
@@ -757,7 +757,7 @@
   },
   {
     "MovieName": "Chernobyl",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "00:56:00",
     "Price": 9.0,
@@ -766,7 +766,7 @@
   },
   {
     "MovieName": "Chernobyl",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "00:56:00",
     "Price": 9.0,
@@ -775,7 +775,7 @@
   },
   {
     "MovieName": "Julia & Julie",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "2:00 PM",
     "Duration": "03:00:00",
     "Price": 8.0,
@@ -784,7 +784,7 @@
   },
   {
     "MovieName": "Julia & Julie",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "03:00:00",
     "Price": 8.0,
@@ -793,7 +793,7 @@
   },
   {
     "MovieName": "Julia & Julie",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "03:00:00",
     "Price": 8.0,
@@ -802,7 +802,7 @@
   },
   {
     "MovieName": "Julia & Julie",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "03:00:00",
     "Price": 8.0,
@@ -811,7 +811,7 @@
   },
   {
     "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "2:00 PM",
     "Duration": "03:30:00",
     "Price": 10.0,
@@ -820,7 +820,7 @@
   },
   {
     "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "03:30:00",
     "Price": 10.0,
@@ -829,7 +829,7 @@
   },
   {
     "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "03:30:00",
     "Price": 10.0,
@@ -838,7 +838,7 @@
   },
   {
     "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "03:30:00",
     "Price": 10.0,
@@ -847,7 +847,7 @@
   },
   {
     "MovieName": "Bergen",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "03:00:00",
     "Price": 10.0,
@@ -856,7 +856,7 @@
   },
   {
     "MovieName": "Bergen",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "12:00 PM",
     "Duration": "03:00:00",
     "Price": 10.0,
@@ -865,7 +865,7 @@
   },
   {
     "MovieName": "Bergen",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "03:00:00",
     "Price": 10.0,
@@ -874,7 +874,7 @@
   },
   {
     "MovieName": "Bergen",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "03:00:00",
     "Price": 10.0,
@@ -883,7 +883,7 @@
   },
   {
     "MovieName": "Wonder",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -892,7 +892,7 @@
   },
   {
     "MovieName": "Wonder",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "12:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -901,7 +901,7 @@
   },
   {
     "MovieName": "Wonder",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -910,7 +910,7 @@
   },
   {
     "MovieName": "Wonder",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:50:00",
     "Price": 10.0,
@@ -919,7 +919,7 @@
   },
   {
     "MovieName": "The Fault In Our Stars",
-    "MovieDate": "5/25/2023",
+    "MovieDate": "5/26/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:45:00",
     "Price": 10.0,
@@ -928,7 +928,7 @@
   },
   {
     "MovieName": "The Fault In Our Stars",
-    "MovieDate": "5/26/2023",
+    "MovieDate": "5/27/2023",
     "MovieDateTime": "12:00 PM",
     "Duration": "02:45:00",
     "Price": 10.0,
@@ -937,7 +937,7 @@
   },
   {
     "MovieName": "The Fault In Our Stars",
-    "MovieDate": "5/27/2023",
+    "MovieDate": "5/28/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:45:00",
     "Price": 10.0,
@@ -946,7 +946,7 @@
   },
   {
     "MovieName": "The Fault In Our Stars",
-    "MovieDate": "5/28/2023",
+    "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:45:00",
     "Price": 10.0,
