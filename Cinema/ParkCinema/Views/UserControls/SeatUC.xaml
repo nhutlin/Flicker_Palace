@@ -323,6 +323,8 @@
                     <Label Height="40" Margin="150,450,0,0" FontSize="25" FontWeight="DemiBold" Content="Password"></Label>
                     <TextBox Text="{Binding Password}" Height="40" Width="250" Margin="280,450,0,0" FontSize="18" FontWeight="DemiBold"></TextBox>
                     <Button Height="35" Width="100" FontSize="18" Margin="280,530,0,0" Foreground="White" Style="{StaticResource buyButton2}" Command="{Binding SignedCommand }" Content="Sign Up"></Button>
+                    <Image Width="100" Source="/Icons/backarrow.png" Canvas.Left="230" Canvas.Top="604" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button Command="{Binding BackSignUpButtonClickCommand}" Style="{StaticResource allButtons}" FontWeight="DemiBold" FontSize="20" Content="Back" Canvas.Left="255" Canvas.Top="639" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 </Canvas>
                 <Canvas Visibility="{Binding CardVisibility}">
                     <Label Height="40" Margin="150,200,0,0" FontSize="25" FontWeight="DemiBold" Content="Card number(16 digits)"></Label>
@@ -334,6 +336,9 @@
                     <Label Height="40" FontSize="25" FontWeight="DemiBold" Content="CVC" Canvas.Left="518" Canvas.Top="270" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     <TextBox Text="{Binding CVC}" Height="40" Width="90" FontSize="18" FontWeight="DemiBold" Canvas.Left="606" Canvas.Top="275" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     <Button Style="{StaticResource buyButton2}" Content="Order" Command="{Binding OrderCommand}" Canvas.Left="400" Canvas.Top="350" Width="100" Height="40" Foreground="White" FontWeight="Bold" FontSize="20"></Button>
+                    <Image Width="100" Source="/Icons/backarrow.png" Canvas.Left="230" Canvas.Top="604" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button Command="{Binding BackCardButtonClickCommand}" Style="{StaticResource allButtons}" FontWeight="DemiBold" FontSize="20" Content="Back" Canvas.Left="255" Canvas.Top="639" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
                 </Canvas>
                 <Canvas Visibility="{Binding SuccessVisibility}">
                     <Image Canvas.Left="420" Canvas.Top="275"  Source="/Icons/check.png" />

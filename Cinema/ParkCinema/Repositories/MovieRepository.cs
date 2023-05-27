@@ -99,26 +99,7 @@ namespace ParkCinema.Repositories
                 MoviePrice=7,
                 MovieLink="https://www.youtube.com/watch?v=UzHilzZX7iw"
             },
-            new Movie{
-                Id=5,
-                MovieName="Evdə qalmış",
-                MovieDate="Since 10 March",
-                MovieFormat="2D",
-                MovieLanguages="AZ",
-                Age="12+",
-                ImagePath="/images/evdeCover.jpg",
-                MovieCondition="today",
-                MovieCountry="Azerbaijan",
-                MovieDirector="Valeh Ahmadov",
-                MovieGenre="Romantic comedy",
-                MovieActors="Kəmalə Piriyeva Şəhriyar Əbilov Həmidə Ömərova Mehriban Xanlarova Sanura Cəfərova Kənan Yusif",
-                About="Ruslan and Sevda must get married by the age of 30 by the compulsion of their parents. “You are spinster”, “when do you move, baby?” young people who are tired of their words as such do not want to get married, but events confront them. Will they spend their 30s as single or married? How will the way they choose to get rid of the word ” spinster ” change their lives?",
-                MovieDuration="01:40:00",
-                MovieYear=2023,
-                Rating=6.5,
-                MoviePrice=10,
-                MovieLink="https://www.youtube.com/watch?v=3E6cjO5kcco"
-            },
+            
             new Movie{
                 Id=6,
                 MovieName="Scream 6",
@@ -159,26 +140,7 @@ namespace ParkCinema.Repositories
                 MoviePrice=9,
                 MovieLink="https://www.youtube.com/watch?v=bHXejJq5vr0"
             },
-            new Movie{
-                Id=8,
-                MovieName="Uçuş 811",
-                MovieDate="Since 9 March",
-                MovieFormat="2D",
-                MovieLanguages="TR",
-                Age="16+",
-                ImagePath="/images/uchush811.jpg",
-                MovieCondition="today",
-                MovieCountry="Turkey",
-                MovieDirector="Hakan Kerim Karademir",
-                MovieGenre="Drama",
-                MovieActors="Burcu Kara Emre Karayel Yosi Mizrahi",
-                About="Follows the story of Azra and Cengiz, a couple who take a precious stone worth $2 million to auction in the USA, on the plane number 811. A distrustful death on the plane from Istanbul to New York changes the fate of all passengers.",
-                MovieDuration="01:40:00",
-                MovieYear=2023,
-                Rating=7.4,
-                MoviePrice=10,
-                MovieLink="https://www.youtube.com/watch?v=0ic2a3QztYc"
-            },
+            
             new Movie{
                 Id=9,
                 MovieName="Cocaine Bear",
@@ -359,26 +321,7 @@ namespace ParkCinema.Repositories
                 MoviePrice=8,
                 MovieLink="https://www.youtube.com/watch?v=ozRK7VXQl-k"
             },
-            new Movie{
-                Id=18,
-                MovieName="Yedinci Koğuştaki Mucize",
-                MovieDate="From 25 March",
-                MovieFormat="2D",
-                MovieLanguages="TR",
-                Age="16+",
-                ImagePath="/images/yedinci.jpg",
-                MovieCondition="soon",
-                MovieCountry="USA",
-                MovieDirector="Mehmet Ada Öztekin",
-                MovieGenre="Drama",
-                MovieActors="Aras Bulut Iynemli Nisa Sofiya Aksongur Deniz Baysal",
-                About="A story of love between a mentally-ill father who was wrongly accused of murder and his lovely six year old daughter. Prison will be their home. Based on the 2013 Korean movie Miracle in Cell No. 7 (2013).",
-                MovieDuration="01:40:00",
-                MovieYear=2019,
-                Rating=8.2,
-                MoviePrice=10,
-                MovieLink="https://www.youtube.com/watch?v=z_tgY9Nmo18"
-            },
+           
             new Movie{
                 Id=19,
                 MovieName="Bergen",

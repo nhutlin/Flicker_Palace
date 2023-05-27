@@ -13,6 +13,34 @@ namespace ParkCinema.Helpers
 {
     public class FileHelper
     {
+        public static void WriteEmails(List<Email> emails)
+        {
+            var serializer = new JsonSerializer();
+
+            using (var sw = new StreamWriter("emails.json"))
+            {
+                using (var jw = new JsonTextWriter(sw))
+                {
+                    jw.Formatting = Formatting.Indented;
+                    serializer.Serialize(jw, emails);
+                }
+            }
+        }
+
+        public static List<Email> ReadEmails()
+        {
+            List<Email> emails = null;
+            var serializer = new JsonSerializer();
+            using (var sr = new StreamReader("emails.json"))
+            {
+                using (var jr = new JsonTextReader(sr))
+                {
+                    emails = serializer.Deserialize<List<Email>>(jr);
+                }
+            }
+            return emails;
+        }
+
         public static void WriteMovies(List<Movie> movies)
         {
             var serializer = new JsonSerializer();

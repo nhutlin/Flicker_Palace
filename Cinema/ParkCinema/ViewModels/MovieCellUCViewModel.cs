@@ -1,8 +1,10 @@
-﻿using ParkCinema.Commands;
+﻿using Newtonsoft.Json;
+using ParkCinema.Commands;
 using ParkCinema.Models;
 using ParkCinema.Services;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +35,6 @@ namespace ParkCinema.ViewModels
         {
             AddMovieClickCommand = new RelayCommand((obj) =>
             {
-                var grid = obj as Grid;
                 var mymovie = new Movie();
                 mymovie.MovieName = movie.MovieName;
                 mymovie.MovieDate = movie.MovieDate;
@@ -51,40 +52,19 @@ namespace ParkCinema.ViewModels
                 mymovie.MovieYear = movie.MovieYear;
                 mymovie.Rating = movie.Rating;
                 mymovie.MoviePrice = movie.MoviePrice;
-                mymovie.MovieLink = "https://www.youtube.com/watch?v=642lKXC97c4";
+                mymovie.MovieLink = "";
 
-                //foreach (var item in grid.Children)
-                //{
-                //    if(item is Canvas canvas)
-                //    {
-                //        foreach (var mov in canvas.Children)
-                //        {
-                //            if(mov is TextBlock txt)
-                //            {
-                //                if (txt.Name == "name")
-                //                {
-                //                    mymovie.MovieName = txt.Text;
-                //                }
-                //                if (txt.Name == "about")
-                //                {
-                //                    mymovie.About = txt.Text;
-                //                }
-                //                if (txt.Name == "rating")
-                //                {
-                //                    mymovie.Rating = double.Parse(txt.Text);
-                //                }                       
-                //            }
-                //            if(mov is Image img)
-                //            {
-                //                if (img.Name == "image")
-                //                {
-                //                    mymovie.ImagePath = "/images/shazamCover.jpg";
-                //                }
-                //            }
-                //        }
-                //    }
-                //}
-                App.MovieRepo.Movies.Add(mymovie);
+                
+                App.MovieRepo.Movies.Add(mymovie); 
+                var data = new List<Movie>();
+
+                foreach (var item in App.MovieRepo.Movies)
+                {
+                    data.Add(item);
+                }
+
+                string jsonString = JsonConvert.SerializeObject(data);
+                File.WriteAllText("movies.json", jsonString);
             });
         }
 

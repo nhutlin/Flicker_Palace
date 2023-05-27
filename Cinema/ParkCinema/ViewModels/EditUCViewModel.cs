@@ -330,38 +330,15 @@ namespace ParkCinema.ViewModels
         }
         private void Save()
         {
+            var data = new List<Movie>();
+
             foreach (var item in App.MovieRepo.Movies)
             {
-                if (item.Id == Movie.Id)
-                {
-                    string jsonString = File.ReadAllText("movies.json");
-
-                    var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
-                    data.Add(item);
-                    //var element = data.FirstOrDefault(e => e.Id == item.Id);
-                    //try
-                    //{
-                    //    element.MovieName = item.MovieName;
-                    //    element.MovieGenre = Genre;
-                    //    element.MoviePrice = Price;
-                    //    element.MovieDirector = Director;
-                    //    element.Age = AgeLimit;
-                    //    element.MovieCountry = Country;
-                    //    element.MovieDuration = Duration;
-                    //    element.MovieLanguages = Language;
-                    //    element.MovieYear = Year;
-                    //    element.ImagePath = ImagePath;
-                    //    element.About = MovieAbout;
-                    //}
-                    //catch
-                    //{
-                    //    MessageBox.Show("da save");
-                    //}
-                    jsonString = JsonConvert.SerializeObject(data);
-
-                    File.WriteAllText("movies.json", jsonString);
-                }
+                data.Add(item);
             }
+
+            string jsonString = JsonConvert.SerializeObject(data);
+            File.WriteAllText("movies.json", jsonString);
         }
 
         public EditUCViewModel()

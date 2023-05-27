@@ -1,4 +1,5 @@
-﻿using ParkCinema.Models;
+﻿using ParkCinema.Helpers;
+using ParkCinema.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,12 +22,17 @@ namespace ParkCinema.Repositories
                     new Email
                     {
                         Id=1,
-                        UserName="Sevil",
-                        UserSurname="Sariyeva",
-                        UserEmail="vstudio7377@gmail.com",
-                        UserPassword="Someone2000"
+                        UserName="Jack",
+                        UserSurname="Rose",
+                        UserEmail="user@gmail.com",
+                        UserPassword="12345678A"
                     }
                 };
+                FileHelper.WriteEmails(Emails);
+            }
+            else
+            {
+                Emails = FileHelper.ReadEmails();
             }
         }
     }

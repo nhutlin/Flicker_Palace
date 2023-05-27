@@ -65,6 +65,8 @@ namespace ParkCinema.ViewModels
         public RelayCommand NextPlacesButtonClickCommand { get; set; }
         public RelayCommand BackSessionButtonClickCommand { get; set; }
         public RelayCommand BackPlacesButtonClickCommand { get; set; }
+        public RelayCommand BackSignUpButtonClickCommand { get; set; }
+        public RelayCommand BackCardButtonClickCommand { get; set; }
         public RelayCommand NextPaymentButtonClickCommand { get; set; }
         public RelayCommand PlaceClickCommand { get; set; }
         public RelayCommand CloseCommand { get; set; }
@@ -495,6 +497,31 @@ namespace ParkCinema.ViewModels
                     SessionBackground = "#7c2121";
                 }
             });
+
+            BackSignUpButtonClickCommand = new RelayCommand((obj) =>
+            {
+                if (Count > 0)
+                {
+                    SignUpVisibility = Visibility.Hidden;
+                    PaymentVisibility = Visibility.Visible;
+                    PlacesBackground = "#7c2121";
+                    PaymentBackground = "Red";
+                }
+
+            });
+
+            BackCardButtonClickCommand = new RelayCommand((obj) =>
+            {
+                if (Count > 0)
+                {
+                    PaymentVisibility = Visibility.Visible;
+                    CardVisibility= Visibility.Hidden;
+                    PlacesBackground = "#7c2121";
+                    PaymentBackground = "Red";
+                }
+
+            });
+
             BackPlacesButtonClickCommand = new RelayCommand((obj) =>
             {
                 if (Count > 0)
@@ -548,19 +575,48 @@ namespace ParkCinema.ViewModels
                     mail.UserEmail = EmailName;
                     Email = mail;
                     App.EmailRepo.Emails.Add(Email);
-                    MessageBox.Show("Email is added successfully!");
-                }
 
+                    var data = new List<Email>(); // Tạo một danh sách mới để lưu trữ các emails
+
+                    foreach (var item in App.EmailRepo.Emails)
+                    {
+                        data.Add(item);
+                    }
+
+                    string jsonString = JsonConvert.SerializeObject(data);
+                    File.WriteAllText("emails.json", jsonString);
+
+                    //foreach (var item in App.EmailRepo.Emails)
+                    //{
+                    //        string jsonString = File.ReadAllText("emails.json");
+
+                    //        var data = JsonConvert.DeserializeObject<List<Email>>(jsonString);
+                    //        data.Add(item);
+                    //        jsonString = JsonConvert.SerializeObject(data);
+
+                    //        File.WriteAllText("emails.json", jsonString);
+                    //}
+
+                    MessageBox.Show("Email is added successfully!");
+                    PaymentVisibility = Visibility.Visible;
+                    SignUpVisibility = Visibility.Hidden;
+                }
             });
             LoginCommand = new RelayCommand((obj) =>
             {
+                int i = 0;
                 foreach (var item in App.EmailRepo.Emails)
                 {
                     if (item.UserEmail == EmailName && item.UserPassword == Password.ToString())
                     {
+                        i = i + 1;
                         PaymentVisibility = Visibility.Hidden;
                         CardVisibility = Visibility.Visible;
                     }
+                }
+                if (i == 0)
+                {
+                    MessageBox.Show("Thông tin đăng nhập không chính xác!");
                 }
             });
             OrderCommand = new RelayCommand((obj) =>
