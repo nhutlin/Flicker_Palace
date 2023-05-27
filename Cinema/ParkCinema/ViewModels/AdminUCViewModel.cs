@@ -127,29 +127,23 @@ namespace ParkCinema.ViewModels
                     if (item == mov)
                     {
                         vm.Movie = mov;
-                        vm.Title = mov.MovieName;
-                        vm.Year = mov.MovieYear;
-                        vm.Genre = mov.MovieGenre;
-                        vm.Director = mov.MovieDirector;
-                        vm.Actor = mov.MovieActors;
-                        vm.Country = mov.MovieCountry;
-                        vm.Language = mov.MovieLanguages;
-                        vm.Duration = mov.MovieDuration;
-                        vm.Rating = mov.Rating;
-                        vm.Price = mov.MoviePrice;
-                        vm.ImagePath = mov.ImagePath;
-                        vm.AgeLimit = mov.Age;
-                        vm.Condition = mov.MovieCondition;
+                        vm.Title = item.MovieName;
+                        vm.Year = item.MovieYear;
+                        vm.Genre = item.MovieGenre;
+                        vm.Director = item.MovieDirector;
+                        vm.Actor = item.MovieActors;
+                        vm.Country = item.MovieCountry;
+                        vm.Language = item.MovieLanguages;
+                        vm.Duration = item.MovieDuration;
+                        vm.Rating = item.Rating;
+                        vm.Price = item.MoviePrice;
+                        vm.ImagePath = item.ImagePath;
+                        vm.AgeLimit = item.Age;
+                        vm.Condition = item.MovieCondition;
                         break;
                     }
                 }
-                foreach (var item in App.ScheduleRepo.MovieSchedules)
-                {
-                    if (item.MovieName == vm.Movie.MovieName)
-                    {
-                        vm.AllMoviesSchedule.Add(item);
-                    }
-                }
+                
                 uc.DataContext = vm;
                 App.MyGrid.Children.Add(uc);
             });

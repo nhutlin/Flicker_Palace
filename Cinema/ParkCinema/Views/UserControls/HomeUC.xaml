@@ -110,7 +110,7 @@
                 <Button Command="{Binding SoonClickCommand}" Style="{StaticResource mainButtons}" Width="270" Height="60" Margin="370,738,0,41" HorizontalAlignment="Left" Content="Soon"></Button>
                 <Button Command="{Binding ScheduleClickCommand}" Style="{StaticResource mainButtons}" Width="270" Height="60" Margin="660,738,0,41" HorizontalAlignment="Left" Content="Schedule"></Button>
             </Canvas>
-            <ListBox  HorizontalAlignment="Left" Width="850" Height="1550" BorderThickness="0"  ItemsSource="{Binding AllMovies}" Name="listbox" Margin="80,560,0,0" Background="#2b3236" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox  HorizontalAlignment="Left" Width="850" Height="1550" BorderThickness="0"  ItemsSource="{Binding AllMovies, Mode= TwoWay}" Name="listbox" Margin="80,560,0,0" Background="#2b3236" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel Margin="35,20,0,0" Orientation="Horizontal"></WrapPanel>

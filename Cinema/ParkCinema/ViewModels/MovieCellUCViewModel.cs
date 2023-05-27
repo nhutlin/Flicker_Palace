@@ -36,6 +36,7 @@ namespace ParkCinema.ViewModels
             AddMovieClickCommand = new RelayCommand((obj) =>
             {
                 var mymovie = new Movie();
+                mymovie.Id = App.MovieRepo.Movies[App.MovieRepo.Movies.Count - 1].Id + 1;
                 mymovie.MovieName = movie.MovieName;
                 mymovie.MovieDate = movie.MovieDate;
                 mymovie.MovieFormat = movie.MovieFormat;

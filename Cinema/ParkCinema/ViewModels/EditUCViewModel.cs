@@ -330,15 +330,44 @@ namespace ParkCinema.ViewModels
         }
         private void Save()
         {
-            var data = new List<Movie>();
-
+            
             foreach (var item in App.MovieRepo.Movies)
             {
-                data.Add(item);
+                if (item.Id == Movie.Id)
+                {
+                    string jsonString = File.ReadAllText("movies.json");
+
+                    var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
+                    var element = data.FirstOrDefault(e => e.Id == item.Id);
+
+                    element.MovieName = Title;
+                    element.MovieGenre = Genre;
+                    element.MoviePrice = Price;
+                    element.MovieDirector = Director;
+                    element.Age = AgeLimit;
+                    element.MovieCountry = Country;
+                    element.MovieDuration = Duration;
+                    element.MovieLanguages = Language;
+                    element.MovieYear = Year;
+                    element.ImagePath = ImagePath;
+                    element.About = MovieAbout;
+
+                    jsonString = JsonConvert.SerializeObject(data);
+
+                    File.WriteAllText("movies.json", jsonString);
+
+                }
             }
 
-            string jsonString = JsonConvert.SerializeObject(data);
-            File.WriteAllText("movies.json", jsonString);
+            string json = File.ReadAllText("movies.json");
+
+            List<Movie> itemList = JsonConvert.DeserializeObject<List<Movie>>(json);
+            App.MovieRepo.Movies = itemList;
+            string updatedJson = JsonConvert.SerializeObject(itemList, Formatting.Indented);
+            File.WriteAllText("movies.json", updatedJson);
+            App.MyGrid.Children.RemoveAt(1);
+            MessageBox.Show("You have save the Movie");
+
         }
 
         public EditUCViewModel()
@@ -419,6 +448,12 @@ namespace ParkCinema.ViewModels
             SaveChangesCommand = new RelayCommand((obj) =>
             {
                 Save();
+                var uc2 = new AdminUC();
+                var vm2 = new AdminUCViewModel();
+                vm2.MainPartVisibility = Visibility.Visible;
+                uc2.DataContext = vm2;
+                App.MyGrid.Children.Clear();
+                App.MyGrid.Children.Add(uc2);
             });
             ImageClickCommand = new RelayCommand((obj) =>
             {

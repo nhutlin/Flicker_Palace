@@ -71,7 +71,7 @@ namespace ParkCinema.Helpers
         {
             List<MovieSchedule> movies = null;
             var serializer = new JsonSerializer();
-            using (var sr = new StreamReader("movies.json"))
+            using (var sr = new StreamReader("moviesSchedule.json"))
             {
                 using (var jr = new JsonTextReader(sr))
                 {

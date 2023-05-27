@@ -99,9 +99,9 @@ namespace ParkCinema.Repositories
                 MoviePrice=7,
                 MovieLink="https://www.youtube.com/watch?v=UzHilzZX7iw"
             },
-            
+
             new Movie{
-                Id=6,
+                Id=5,
                 MovieName="Scream 6",
                 MovieDate="Since 9 March",
                 MovieFormat="2D",
@@ -140,9 +140,9 @@ namespace ParkCinema.Repositories
                 MoviePrice=9,
                 MovieLink="https://www.youtube.com/watch?v=bHXejJq5vr0"
             },
-            
+
             new Movie{
-                Id=9,
+                Id=8,
                 MovieName="Cocaine Bear",
                 MovieDate="Since 23 February",
                 MovieFormat="2D",
@@ -162,7 +162,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=DuWEEKeJLMI"
             },
             new Movie{
-                Id=10,
+                Id=9,
                 MovieName="Ant-Man and the Wasp: Quantumania",
                 MovieDate="Since 16 February",
                 MovieFormat="3D / 2D",
@@ -182,7 +182,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=5WfTEZJnv_8"
             },
             new Movie{
-                Id=11,
+                Id=10,
                 MovieName="Prestij Meselesi",
                 MovieDate="Since 3 February",
                 MovieFormat="2D",
@@ -202,7 +202,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=zaLV0-2WqEs"
             },
             new Movie{
-                Id=12,
+                Id=11,
                 MovieName="Gifted",
                 MovieDate="Since 2 February",
                 MovieFormat="2D",
@@ -222,7 +222,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=tI01wBXGHUs"
             },
             new Movie{
-                Id=13,
+                Id=12,
                 MovieName="Kutsal Damacana 4",
                 MovieDate="Since 26 January",
                 MovieFormat="2D",
@@ -242,7 +242,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=HphAPON03o8"
             },
             new Movie{
-                Id=14,
+                Id=13,
                 MovieName="Passengers",
                 MovieDate="Since 26 January",
                 MovieFormat="2D",
@@ -262,7 +262,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=BJWR0io_SuE"
             },
             new Movie{
-                Id=15,
+                Id=14,
                 MovieName="A Beautiful Mind",
                 MovieDate="Since 24 January",
                 MovieFormat="2D",
@@ -282,7 +282,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=9wZM7CQY130"
             },
             new Movie{
-                Id=16,
+                Id=15,
                 MovieName="Chernobyl",
                 MovieDate="Since 23 January",
                 MovieFormat="2D",
@@ -302,7 +302,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=s9APLXM9Ei8"
             },
             new Movie{
-                Id=17,
+                Id=16,
                 MovieName="Julia & Julie",
                 MovieDate="From 22 March",
                 MovieFormat="2D",
@@ -323,7 +323,7 @@ namespace ParkCinema.Repositories
             },
            
             new Movie{
-                Id=19,
+                Id=17,
                 MovieName="Bergen",
                 MovieDate="From 28 March",
                 MovieFormat="2D",
@@ -343,7 +343,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=dMsSORIgsOg"
             },
             new Movie{
-                Id=20,
+                Id=18,
                 MovieName="Wonder",
                 MovieDate="From 28 March",
                 MovieFormat="2D",
@@ -363,7 +363,7 @@ namespace ParkCinema.Repositories
                 MovieLink="https://www.youtube.com/watch?v=Ob7fPOzbmzE"
             },
              new Movie{
-                Id=21,
+                Id=19,
                 MovieName="The Fault In Our Stars",
                 MovieDate="From 1 April",
                 MovieFormat="2D",
