@@ -27,10 +27,10 @@
                 <Image Width="300" Height="200" Source="/Icons/ticketBanner.png" Margin="-35,-200,0,0"></Image>
             </StackPanel>
             <Button Command="{Binding BuyTicketCommand}" CommandParameter="{Binding ElementName=movieGrid}" Margin="1020,500,0,0" Style="{StaticResource buyButton2}" Width="200" Height="80" FontSize="25" FontWeight="Bold">Buy Ticket</Button>
-            <StackPanel Width="200" Margin="1020,600,0,0" Height="700">
+            <StackPanel Width="200" Height="962" Canvas.Left="1020" Canvas.Top="600">
                 <Image Stretch="Fill"  Source="{Binding Movie.ImagePath}"></Image>
                 <Label Foreground="#818181">Rating</Label>
-                <TextBlock Margin="5,0,0,0" Foreground="White"></TextBlock>
+                <TextBlock Margin="5,0,0,0" Foreground="White" Text="{Binding Movie.Rating}"></TextBlock>
                 <Label Foreground="#818181">Country</Label>
                 <TextBlock Margin="5,0,0,0" Foreground="White" Text="{Binding Movie.MovieCountry}"></TextBlock>
                 <Label Foreground="#818181">Year</Label>
@@ -45,82 +45,84 @@
                 <TextBlock Margin="5,0,0,0" Foreground="White" Text="{Binding Movie.MovieDuration}"></TextBlock>
                 <Label Foreground="#818181">Age Limit</Label>
                 <TextBlock Margin="5,0,0,0" Foreground="White" Text="{Binding Movie.Age}"></TextBlock>
+                <Label Foreground="#818181">Price</Label>
+                <TextBlock Margin="5,0,0,0" Foreground="White" Text="{Binding Movie.MoviePrice}"></TextBlock>
             </StackPanel>
         </Canvas>
-        <StackPanel Margin="60,600,0,0">
-            <wv2:WebView2 Name="webview" Width="850" HorizontalAlignment="Left" Height="400" Source="{Binding Movie.MovieLink}"></wv2:WebView2>
+        <StackPanel Margin="60,600,0,573">
+            <wv2:WebView2 Name="webview" Width="850" HorizontalAlignment="Left" Height="523" Source="{Binding Movie.MovieLink}"></wv2:WebView2>
         </StackPanel>
-        <Label HorizontalAlignment="Center" Height="100" Foreground="White" Margin="0,600,280,0" FontWeight="ExtraBlack" FontSize="40">See also</Label>
-        <ListBox  Background="Transparent" ItemsSource="{Binding AllMovies}" HorizontalAlignment="Left" Width="850" Height="300" Margin="80,1150,0,0" Name="listbox"  BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-                <ListBox.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel Orientation="Horizontal"></WrapPanel>
-                    </ItemsPanelTemplate>
-                </ListBox.ItemsPanel>
-                <ListBox.ItemContainerStyle>
-                    <Style TargetType="ListBoxItem">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="ListBoxItem">
-                                    <Border BorderThickness="{TemplateBinding Border.BorderThickness}"
+        <Label HorizontalAlignment="Left" Foreground="White" Margin="337,1170,0,484" FontWeight="ExtraBlack" FontSize="40" RenderTransformOrigin="0.541,0.506">See also</Label>
+        <ListBox  Background="Transparent" ItemsSource="{Binding AllMovies}" HorizontalAlignment="Left" Width="850" Height="300" Margin="-4,1309,0,108" Name="listbox"  BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"></WrapPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListBoxItem">
+                                <Border BorderThickness="{TemplateBinding Border.BorderThickness}"
                   Padding="{TemplateBinding Control.Padding}"
                   BorderBrush="{TemplateBinding Border.BorderBrush}"
                   Background="{TemplateBinding Panel.Background}"
                   Name="Bd"
                   SnapsToDevicePixels="True">
-                                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}"
+                                    <ContentPresenter Content="{TemplateBinding ContentControl.Content}"
                                ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
                                ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}"
                                HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
                                VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
                                SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
-                                    </Border>
-                                    <ControlTemplate.Triggers>
-                                        <MultiTrigger>
-                                            <MultiTrigger.Conditions>
-                                                <Condition Property="Selector.IsSelectionActive" Value="False"/>
-                                                <Condition Property="Selector.IsSelected" Value="True"/>
-                                            </MultiTrigger.Conditions>
-                                            <Setter Property="Panel.Background" TargetName="Bd" Value="Transparent"/>
-                                            <Setter Property="Border.BorderBrush" TargetName="Bd">
-                                                <Setter.Value>
-                                                    <SolidColorBrush>Transparent</SolidColorBrush>
-                                                </Setter.Value>
-                                            </Setter>
-                                        </MultiTrigger>
-                                        <MultiTrigger>
-                                            <MultiTrigger.Conditions>
-                                                <Condition Property="Selector.IsSelectionActive" Value="True"/>
-                                                <Condition Property="Selector.IsSelected" Value="True"/>
-                                            </MultiTrigger.Conditions>
-                                            <Setter Property="Panel.Background" TargetName="Bd" Value="Transparent"/>
-                                            <Setter Property="Border.BorderBrush" TargetName="Bd">
-                                                <Setter.Value>
-                                                    <SolidColorBrush>Transparent</SolidColorBrush>
-                                                </Setter.Value>
-                                            </Setter>
-                                        </MultiTrigger>
-                                        <Trigger Property="UIElement.IsMouseOver" Value="True">
-                                            <Setter Property="Panel.Background" TargetName="Bd" Value="Transparent"/>
-                                            <Setter Property="Border.BorderBrush" TargetName="Bd">
-                                                <Setter.Value>
-                                                    <SolidColorBrush>Transparent</SolidColorBrush>
-                                                </Setter.Value>
-                                            </Setter>
-                                        </Trigger>
-                                        <Trigger Property="UIElement.IsEnabled" Value="False">
-                                            <Setter Property="TextElement.Foreground" TargetName="Bd">
-                                                <Setter.Value>
-                                                    <DynamicResource ResourceKey="{x:Static SystemColors.GrayTextBrushKey}" />
-                                                </Setter.Value>
-                                            </Setter>
-                                        </Trigger>
-                                    </ControlTemplate.Triggers>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ListBox.ItemContainerStyle>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="Selector.IsSelectionActive" Value="False"/>
+                                            <Condition Property="Selector.IsSelected" Value="True"/>
+                                        </MultiTrigger.Conditions>
+                                        <Setter Property="Panel.Background" TargetName="Bd" Value="Transparent"/>
+                                        <Setter Property="Border.BorderBrush" TargetName="Bd">
+                                            <Setter.Value>
+                                                <SolidColorBrush>Transparent</SolidColorBrush>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </MultiTrigger>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="Selector.IsSelectionActive" Value="True"/>
+                                            <Condition Property="Selector.IsSelected" Value="True"/>
+                                        </MultiTrigger.Conditions>
+                                        <Setter Property="Panel.Background" TargetName="Bd" Value="Transparent"/>
+                                        <Setter Property="Border.BorderBrush" TargetName="Bd">
+                                            <Setter.Value>
+                                                <SolidColorBrush>Transparent</SolidColorBrush>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </MultiTrigger>
+                                    <Trigger Property="UIElement.IsMouseOver" Value="True">
+                                        <Setter Property="Panel.Background" TargetName="Bd" Value="Transparent"/>
+                                        <Setter Property="Border.BorderBrush" TargetName="Bd">
+                                            <Setter.Value>
+                                                <SolidColorBrush>Transparent</SolidColorBrush>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                    <Trigger Property="UIElement.IsEnabled" Value="False">
+                                        <Setter Property="TextElement.Foreground" TargetName="Bd">
+                                            <Setter.Value>
+                                                <DynamicResource ResourceKey="{x:Static SystemColors.GrayTextBrushKey}" />
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
                     <i:InvokeCommandAction Command="{Binding MovieNameClickCommand}" 
@@ -128,17 +130,17 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
             <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Border Background="Transparent"  BorderThickness="0" CornerRadius="20" Width="150" Height="250">
-                            <Grid Margin="0,35,0,0"  Name="myGrid" Background="Transparent"  >
+                <DataTemplate>
+                    <Border Background="Transparent"  BorderThickness="0" CornerRadius="20" Width="150" Height="250">
+                        <Grid Margin="0,35,0,0"  Name="myGrid" Background="Transparent"  >
 
-                                <Image Cursor="Hand" Height="170" Width="115"  Stretch="Fill" Style="{StaticResource imgStyle}" Name="image" Source="{Binding ImagePath}"></Image>
+                            <Image Cursor="Hand" Height="170" Width="115"  Stretch="Fill" Style="{StaticResource imgStyle}" Name="image" Source="{Binding ImagePath}"></Image>
 
-                                <TextBlock Margin="30,-35,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Style="{StaticResource txtblck}" TextWrapping="Wrap" Text="{Binding MovieName}" FontWeight="Bold" FontFamily="Segoe ui" Background="Transparent"  Name="filmnametxtBox" Foreground="WhiteSmoke" FontSize="15" Width="110" />
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
+                            <TextBlock Margin="30,-35,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Style="{StaticResource txtblck}" TextWrapping="Wrap" Text="{Binding MovieName}" FontWeight="Bold" FontFamily="Segoe ui" Background="Transparent"  Name="filmnametxtBox" Foreground="WhiteSmoke" FontSize="15" Width="110" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         <Canvas Margin="0,1600,0,0" Height="100" Background="#2b3236">
             <Label Margin="80,20,0,0" Foreground="DarkGray">© Park Cinema, 2023</Label>

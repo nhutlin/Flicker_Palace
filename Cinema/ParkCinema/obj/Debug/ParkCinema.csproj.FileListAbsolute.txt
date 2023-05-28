@@ -180,9 +180,6 @@ D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\obj\Debug\ParkCinema.
 D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\obj\Debug\ParkCinema.csproj.CopyComplete
 D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\obj\Debug\ParkCinema.exe
 D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\obj\Debug\ParkCinema.pdb
-D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
-D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
-D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
 D:\Downloads\Cinema\ParkCinema\bin\Debug\ParkCinema.exe.config
 D:\Downloads\Cinema\ParkCinema\bin\Debug\ParkCinema.exe
 D:\Downloads\Cinema\ParkCinema\bin\Debug\ParkCinema.pdb
@@ -216,7 +213,6 @@ D:\Downloads\Cinema\ParkCinema\obj\Debug\Views\UserControls\SessionsUC.g.cs
 D:\Downloads\Cinema\ParkCinema\obj\Debug\Views\UserControls\SuperDayUC.g.cs
 D:\Downloads\Cinema\ParkCinema\obj\Debug\Views\UserControls\TicketUC.g.cs
 D:\Downloads\Cinema\ParkCinema\obj\Debug\App.g.cs
-D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema_Content.g.cs
 D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema_MarkupCompile.cache
 D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema_MarkupCompile.lref
 D:\Downloads\Cinema\ParkCinema\obj\Debug\App.baml
@@ -242,3 +238,7 @@ D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema.csproj.CoreCompileInputs.cac
 D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema.csproj.CopyComplete
 D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema.exe
 D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema.pdb
+D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema_Content.g.cs

@@ -12,33 +12,7 @@
         </Button>
         <Canvas>
             <Image Stretch="Fill" Width="1400" Source="/images/movieback.jpg"></Image>
-            <Button Style="{StaticResource allButtons}" Command="{Binding AppleClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1249" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Image Source="/icons/apple.png"></Image>
-            </Button>
-            <Button Style="{StaticResource allButtons}"  Command="{Binding AndroidClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1294" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Image Source="/icons/android.png"></Image>
-            </Button>
-            <Button Style="{StaticResource allButtons}" Command="{Binding FaceBookClickCommand}" Width="50" Canvas.Top="250" Canvas.Left="1152" HorizontalAlignment="Center" VerticalAlignment="Top">
-                <Image Source="/icons/facebook.png" HorizontalAlignment="Left" VerticalAlignment="Center">
-                    <Image.Effect>
-                        <DropShadowEffect ShadowDepth="3"></DropShadowEffect>
-                    </Image.Effect>
-                </Image>
-            </Button>
-            <Button Style="{StaticResource allButtons}" Command="{Binding TwitterClickCommand}" Width="50" Canvas.Top="250" Canvas.Left="1212" HorizontalAlignment="Center" VerticalAlignment="Top">
-                <Image  Source="/icons/twitter.png" HorizontalAlignment="Left" VerticalAlignment="Center">
-                    <Image.Effect>
-                        <DropShadowEffect ShadowDepth="3"></DropShadowEffect>
-                    </Image.Effect>
-                </Image>
-            </Button>
-            <Button Style="{StaticResource allButtons}" Command="{Binding YoutubeClickCommand}" Width="80" Canvas.Top="256" Canvas.Left="1265">
-                <Image Source="/icons/youtube.png" HorizontalAlignment="Left" VerticalAlignment="Center">
-                    <Image.Effect>
-                        <DropShadowEffect Color="WhiteSmoke" ShadowDepth="2" Direction="200"></DropShadowEffect>
-                    </Image.Effect>
-                </Image>
-            </Button>
+            
             <TextBlock Margin="100,260,0,0" FontWeight="ExtraBlack" FontSize="40" Foreground="White" Text="Campaings"></TextBlock>
             <TextBlock Margin="100,400,0,0" TextWrapping="Wrap" Width="500" Foreground="White" FontSize="20" Text="Don't miss the chance to purchase tickets with discount!
 
@@ -50,7 +24,7 @@ This tariff is actual everyday till 14:00 in Park Cinema Metropark, Park Cinema 
                 <Image Stretch="Fill" Source="/Images/superday.png"></Image>
             </Button>
             <Canvas Margin="-60,1200,0,0" Height="100" Width="1450" Background="#2b3236">
-                <Label Margin="80,20,0,0" Foreground="DarkGray">© Park Cinema, 2023</Label>
+                <Label Margin="80,20,0,0" Foreground="DarkGray">© Flicker Palace, 2023</Label>
                 <Image Height="30" Width="30" Margin="82,50,0,0" Source="/icons/visa.png"></Image>
                 <Image Height="30" Width="30" Margin="117,50,0,0" Source="/icons/master.png"></Image>
                 <Label Width="250" Height="100" Margin="1200,0,0,0" Background="#6e6d6d">

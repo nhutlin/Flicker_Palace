@@ -144,9 +144,9 @@ namespace ParkCinema.ViewModels
                 Dates.Add(DateTime.Now.AddDays(i).ToShortDateString().ToString());
             }
             Theaters = new List<string>();
-            Theaters.Add("Park Bulvar");
-            Theaters.Add("Deniz Mall");
-            Theaters.Add("MetroPark");
+            Theaters.Add("Flicker Palace Gò Vấp");
+            Theaters.Add("Flicker Palace Linh Trung");
+            Theaters.Add("Flicker PalaceTân Bình");
 
             LogoClickCommand = new RelayCommand((obj) =>
             {

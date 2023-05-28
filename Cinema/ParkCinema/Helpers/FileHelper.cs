@@ -54,6 +54,19 @@ namespace ParkCinema.Helpers
                 }
             }
         }
+        public static List<Movie> ReadMovies()
+        {
+            List<Movie> movies = null;
+            var serializer = new JsonSerializer();
+            using (var sr = new StreamReader("movies.json"))
+            {
+                using (var jr = new JsonTextReader(sr))
+                {
+                    movies = serializer.Deserialize<List<Movie>>(jr);
+                }
+            }
+            return movies;
+        }
         public static void WriteMovieSchedule(List<MovieSchedule> movies)
         {
             var serializer = new JsonSerializer();
@@ -80,18 +93,6 @@ namespace ParkCinema.Helpers
             }
             return movies;
         }
-        public static List<Movie> ReadMovies()
-        {
-            List<Movie> movies = null;
-            var serializer = new JsonSerializer();
-            using (var sr = new StreamReader("movies.json"))
-            {
-                using (var jr = new JsonTextReader(sr))
-                {
-                    movies = serializer.Deserialize<List<Movie>>(jr);
-                }
-            }
-            return movies;
-        }
+        
     }
 }

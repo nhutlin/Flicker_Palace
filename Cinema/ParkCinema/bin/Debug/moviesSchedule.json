@@ -4,8 +4,8 @@
     "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:16:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 1
   },
   {
@@ -13,8 +13,8 @@
     "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:16:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 2
   },
   {
@@ -22,8 +22,8 @@
     "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:16:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 3
   },
   {
@@ -31,8 +31,8 @@
     "MovieDate": "5/30/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:16:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 4
   },
   {
@@ -40,8 +40,8 @@
     "MovieDate": "5/31/2023",
     "MovieDateTime": "2:00 PM",
     "Duration": "02:16:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 5
   },
   {
@@ -49,8 +49,8 @@
     "MovieDate": "5/29/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 6
   },
   {
@@ -58,8 +58,8 @@
     "MovieDate": "5/30/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 7
   },
   {
@@ -67,8 +67,8 @@
     "MovieDate": "5/31/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 8
   },
   {
@@ -76,8 +76,8 @@
     "MovieDate": "6/1/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
+    "Price": 10,
+    "Theater": "Flicker Palace Taan Bình",
     "Id": 9
   },
   {
@@ -85,8 +85,8 @@
     "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:20:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 10
   },
   {
@@ -94,8 +94,8 @@
     "MovieDate": "5/28/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:20:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 11
   },
   {
@@ -103,8 +103,8 @@
     "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:20:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 12
   },
   {
@@ -112,8 +112,8 @@
     "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:20:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 13
   },
   {
@@ -121,8 +121,8 @@
     "MovieDate": "5/30/2023",
     "MovieDateTime": "6:00 PM",
     "Duration": "02:20:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 14
   },
   {
@@ -130,8 +130,8 @@
     "MovieDate": "6/1/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:20:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 14
   },
   {
@@ -139,8 +139,8 @@
     "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
+    "Price": 7,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 15
   },
   {
@@ -148,8 +148,8 @@
     "MovieDate": "5/29/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
+    "Price": 7,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 16
   },
   {
@@ -157,8 +157,8 @@
     "MovieDate": "5/30/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
+    "Price": 7,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 17
   },
   {
@@ -166,728 +166,584 @@
     "MovieDate": "5/31/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
-    "Id": 17
-  },
-  {
-    "MovieName": "Epic Tales",
-    "MovieDate": "6/1/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
+    "Price": 7,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 18
   },
   {
     "MovieName": "Epic Tales",
+    "MovieDate": "6/1/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:55:00",
+    "Price": 7,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 19
+  },
+  {
+    "MovieName": "Epic Tales",
     "MovieDate": "6/2/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
-    "Id": 19
+    "Price": 7,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 20
   },
   {
     "MovieName": "Epic Tales",
     "MovieDate": "6/3/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "01:55:00",
-    "Price": 7.0,
-    "Theater": "MetroPark",
-    "Id": 20
-  },
-  {
-    "MovieName": "Evdə qalmış",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "01:40:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
+    "Price": 7,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 21
   },
   {
-    "MovieName": "Evdə qalmış",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "01:40:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 22
-  },
-  {
-    "MovieName": "Evdə qalmış",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "01:40:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 23
-  },
-  {
-    "MovieName": "Evdə qalmış",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "01:40:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 24
-  },
-  {
-    "MovieName": "Evdə qalmış",
-    "MovieDate": "6/1/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "01:40:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 25
-  },
-  {
-    "MovieName": "Evdə qalmış",
-    "MovieDate": "6/2/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "01:40:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 26
-  },
-  {
     "MovieName": "Scream 6",
     "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
-    "Id": 26
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 22
   },
   {
     "MovieName": "Scream 6",
     "MovieDate": "5/29/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 27
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 23
   },
   {
     "MovieName": "Scream 6",
     "MovieDate": "5/30/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 28
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 24
   },
   {
     "MovieName": "Scream 6",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 29
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 25
   },
   {
     "MovieName": "Scream 6",
     "MovieDate": "6/1/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 30
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 26
   },
   {
     "MovieName": "Scream 6",
     "MovieDate": "6/2/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 27
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 28
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 29
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 30
+  },
+  {
+    "MovieName": "65",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:25:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 31
   },
   {
     "MovieName": "65",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 32
-  },
-  {
-    "MovieName": "65",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 33
-  },
-  {
-    "MovieName": "65",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
-    "Id": 34
-  },
-  {
-    "MovieName": "65",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
-    "Id": 35
-  },
-  {
-    "MovieName": "65",
     "MovieDate": "6/1/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 36
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 32
   },
   {
     "MovieName": "65",
     "MovieDate": "6/2/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 37
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 33
   },
   {
     "MovieName": "65",
     "MovieDate": "6/3/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:25:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 34
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 35
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 36
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 37
+  },
+  {
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 38
   },
   {
-    "MovieName": "Uçuş 811",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "02:15:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
+    "MovieName": "Cocaine Bear",
+    "MovieDate": "6/1/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:40:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 39
-  },
-  {
-    "MovieName": "Uçuş 811",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "02:15:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 40
-  },
-  {
-    "MovieName": "Uçuş 811",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:15:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 40
-  },
-  {
-    "MovieName": "Uçuş 811",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:15:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 41
-  },
-  {
-    "MovieName": "Uçuş 811",
-    "MovieDate": "6/1/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:15:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 42
-  },
-  {
-    "MovieName": "Uçuş 811",
-    "MovieDate": "6/2/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "02:15:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 43
-  },
-  {
-    "MovieName": "Cocaine Bear",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "02:40:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
-    "Id": 44
-  },
-  {
-    "MovieName": "Cocaine Bear",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "02:40:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
-    "Id": 45
-  },
-  {
-    "MovieName": "Cocaine Bear",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "02:40:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 46
-  },
-  {
-    "MovieName": "Cocaine Bear",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:40:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 47
-  },
-  {
-    "MovieName": "Cocaine Bear",
-    "MovieDate": "6/1/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:40:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 48
   },
   {
     "MovieName": "Cocaine Bear",
     "MovieDate": "6/2/2023",
     "MovieDateTime": "10:00 AM",
     "Duration": "02:40:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 49
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 40
   },
   {
     "MovieName": "Cocaine Bear",
     "MovieDate": "6/3/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:40:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 50
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 41
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
     "MovieDate": "5/28/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 51
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 42
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
     "MovieDate": "5/29/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:16:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 52
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 43
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
     "MovieDate": "5/30/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 53
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 44
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 54
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 45
   },
   {
     "MovieName": "Ant-Man and the Wasp: Quantumania",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "1:00 PM",
     "Duration": "02:05:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 55
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 46
   },
   {
     "MovieName": "Prestij Meselesi",
     "MovieDate": "5/28/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 56
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 47
   },
   {
     "MovieName": "Prestij Meselesi",
     "MovieDate": "5/29/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 57
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 48
   },
   {
     "MovieName": "Prestij Meselesi",
     "MovieDate": "5/30/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 58
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 49
   },
   {
     "MovieName": "Prestij Meselesi",
     "MovieDate": "5/30/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 59
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 50
   },
   {
     "MovieName": "Prestij Meselesi",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 60
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 51
   },
   {
     "MovieName": "Prestij Meselesi",
     "MovieDate": "6/1/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 61
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 52
   },
   {
     "MovieName": "Prestij Meselesi",
     "MovieDate": "6/2/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:00:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 53
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 54
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 55
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 56
+  },
+  {
+    "MovieName": "Gifted",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "03:00:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 57
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 58
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 59
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 60
+  },
+  {
+    "MovieName": "Kutsal Damacana 4",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "01:50:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 61
+  },
+  {
+    "MovieName": "Passengers",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 62
   },
   {
-    "MovieName": "Gifted",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "03:00:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
+    "MovieName": "Passengers",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "1:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 63
   },
   {
-    "MovieName": "Gifted",
-    "MovieDate": "5/29/2023",
+    "MovieName": "Passengers",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "1:00 PM",
-    "Duration": "03:00:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
+    "Duration": "02:50:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 64
   },
   {
-    "MovieName": "Gifted",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "03:00:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
+    "MovieName": "Passengers",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "02:50:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 65
   },
   {
-    "MovieName": "Gifted",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "03:00:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 66
   },
   {
-    "MovieName": "Kutsal Damacana 4",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "01:50:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 67
   },
   {
-    "MovieName": "Kutsal Damacana 4",
-    "MovieDate": "5/29/2023",
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/30/2023",
     "MovieDateTime": "1:00 PM",
-    "Duration": "01:50:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
+    "Duration": "03:10:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 68
   },
   {
-    "MovieName": "Kutsal Damacana 4",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "01:50:00",
-    "Price": 9.0,
-    "Theater": "MetroPark",
-    "Id": 69
-  },
-  {
-    "MovieName": "Kutsal Damacana 4",
+    "MovieName": "A Beautiful Mind",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "3:00 PM",
-    "Duration": "01:50:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
+    "Duration": "03:10:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 68
+  },
+  {
+    "MovieName": "A Beautiful Mind",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "03:10:00",
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 70
   },
   {
-    "MovieName": "Passengers",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "MovieName": "Chernobyl",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "00:56:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 71
   },
   {
-    "MovieName": "Passengers",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "MovieName": "Chernobyl",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "00:56:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 72
   },
   {
-    "MovieName": "Passengers",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
+    "MovieName": "Chernobyl",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "00:56:00",
+    "Price": 9,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 73
   },
   {
-    "MovieName": "Passengers",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/28/2023",
+    "MovieDateTime": "2:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 74
   },
   {
-    "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "2:00 PM",
-    "Duration": "03:10:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/29/2023",
+    "MovieDateTime": "5:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8,
+    "Theater": "Flicker Palace Linh Trung",
     "Id": 75
   },
   {
-    "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "03:10:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/30/2023",
+    "MovieDateTime": "7:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8,
+    "Theater": "Flicker Palace Tân Bình",
     "Id": 76
   },
   {
-    "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "1:00 PM",
-    "Duration": "03:10:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
+    "MovieName": "Julia & Julie",
+    "MovieDate": "5/31/2023",
+    "MovieDateTime": "3:00 PM",
+    "Duration": "03:00:00",
+    "Price": 8,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 77
-  },
-  {
-    "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "03:10:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 78
-  },
-  {
-    "MovieName": "A Beautiful Mind",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "2:00 PM",
-    "Duration": "03:10:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 79
-  },
-  {
-    "MovieName": "Chernobyl",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "00:56:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
-    "Id": 80
-  },
-  {
-    "MovieName": "Chernobyl",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "00:56:00",
-    "Price": 9.0,
-    "Theater": "Park Bulvar",
-    "Id": 81
-  },
-  {
-    "MovieName": "Chernobyl",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "00:56:00",
-    "Price": 9.0,
-    "Theater": "Deniz Mall",
-    "Id": 82
-  },
-  {
-    "MovieName": "Julia & Julie",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "2:00 PM",
-    "Duration": "03:00:00",
-    "Price": 8.0,
-    "Theater": "Deniz Mall",
-    "Id": 83
-  },
-  {
-    "MovieName": "Julia & Julie",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "03:00:00",
-    "Price": 8.0,
-    "Theater": "Deniz Mall",
-    "Id": 84
-  },
-  {
-    "MovieName": "Julia & Julie",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "03:00:00",
-    "Price": 8.0,
-    "Theater": "Park Bulvar",
-    "Id": 85
-  },
-  {
-    "MovieName": "Julia & Julie",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "3:00 PM",
-    "Duration": "03:00:00",
-    "Price": 8.0,
-    "Theater": "MetroPark",
-    "Id": 86
-  },
-  {
-    "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/28/2023",
-    "MovieDateTime": "2:00 PM",
-    "Duration": "03:30:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 87
-  },
-  {
-    "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/29/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "03:30:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 88
-  },
-  {
-    "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/30/2023",
-    "MovieDateTime": "7:00 PM",
-    "Duration": "03:30:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 89
-  },
-  {
-    "MovieName": "Yedinci Koğuştaki Mucize",
-    "MovieDate": "5/31/2023",
-    "MovieDateTime": "5:00 PM",
-    "Duration": "03:30:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 90
   },
   {
     "MovieName": "Bergen",
     "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "03:00:00",
-    "Price": 10.0,
+    "Price": 10,
     "Theater": "Park Bulvar",
-    "Id": 91
+    "Id": 78
   },
   {
     "MovieName": "Bergen",
     "MovieDate": "5/29/2023",
     "MovieDateTime": "12:00 PM",
     "Duration": "03:00:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 92
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 79
   },
   {
     "MovieName": "Bergen",
     "MovieDate": "5/30/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "03:00:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 93
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 80
   },
   {
     "MovieName": "Bergen",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "03:00:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 94
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 81
   },
   {
     "MovieName": "Wonder",
     "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
     "Id": 95
   },
   {
@@ -895,62 +751,62 @@
     "MovieDate": "5/29/2023",
     "MovieDateTime": "12:00 PM",
     "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 96
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 82
   },
   {
     "MovieName": "Wonder",
     "MovieDate": "5/30/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 97
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 83
   },
   {
     "MovieName": "Wonder",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:50:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 98
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 84
   },
   {
     "MovieName": "The Fault In Our Stars",
     "MovieDate": "5/28/2023",
     "MovieDateTime": "3:00 PM",
     "Duration": "02:45:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 99
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 85
   },
   {
     "MovieName": "The Fault In Our Stars",
     "MovieDate": "5/29/2023",
     "MovieDateTime": "12:00 PM",
     "Duration": "02:45:00",
-    "Price": 10.0,
-    "Theater": "Deniz Mall",
-    "Id": 100
+    "Price": 10,
+    "Theater": "Flicker Palace Linh Trung",
+    "Id": 86
   },
   {
     "MovieName": "The Fault In Our Stars",
     "MovieDate": "5/30/2023",
     "MovieDateTime": "7:00 PM",
     "Duration": "02:45:00",
-    "Price": 10.0,
-    "Theater": "MetroPark",
-    "Id": 101
+    "Price": 10,
+    "Theater": "Flicker Palace Tân Bình",
+    "Id": 87
   },
   {
     "MovieName": "The Fault In Our Stars",
     "MovieDate": "5/31/2023",
     "MovieDateTime": "5:00 PM",
     "Duration": "02:45:00",
-    "Price": 10.0,
-    "Theater": "Park Bulvar",
-    "Id": 102
+    "Price": 10,
+    "Theater": "Flicker Palace Gò Vấp",
+    "Id": 88
   }
 ]

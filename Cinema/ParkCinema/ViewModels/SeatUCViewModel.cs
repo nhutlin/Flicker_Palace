@@ -84,7 +84,7 @@ namespace ParkCinema.ViewModels
         private string placesBackground;
         private string paymentBackground;
         private bool isButtonEnabled;
-        private decimal totalprice;
+        private int totalprice;
         static int counter = 0;
         private string seat;
 
@@ -161,7 +161,7 @@ namespace ParkCinema.ViewModels
             get { return isButtonEnabled; }
             set { isButtonEnabled = value; OnPropertyChanged(); }
         }
-        public decimal TotalPrice
+        public int TotalPrice
         {
             get { return totalprice; }
             set { totalprice = value; OnPropertyChanged(); }
@@ -546,15 +546,28 @@ namespace ParkCinema.ViewModels
             });
             SignedCommand = new RelayCommand((obj) =>
             {
-                IsAvailable = true;
+                IsAvailable = true; 
+                var data2 = new List<string>(); // Tạo một danh sách mới để lưu trữ các emails
+
+                foreach (var item in App.EmailRepo.Emails)
+                {
+                    data2.Add(item.UserEmail);
+                }
+                
                 if (EmailName != null)
                 {
-                    if (!EmailName.Contains("@gmail.com"))
+                    if (data2.Contains(EmailName))
+                    {
+                        MessageBox.Show("Gmail đã được sử dụng. Vui lòng chọn gmail khác!");
+                        IsAvailable = false;
+                    }
+                    else if (!EmailName.Contains("@gmail.com"))
                     {
                         MessageBox.Show("You can only add Gmail!");
                         IsAvailable = false;
                     }
                 }
+
                 if (Password.Length < 8)
                 {
                     MessageBox.Show("Password Length must be greater than or equal to 8");
@@ -585,17 +598,6 @@ namespace ParkCinema.ViewModels
 
                     string jsonString = JsonConvert.SerializeObject(data);
                     File.WriteAllText("emails.json", jsonString);
-
-                    //foreach (var item in App.EmailRepo.Emails)
-                    //{
-                    //        string jsonString = File.ReadAllText("emails.json");
-
-                    //        var data = JsonConvert.DeserializeObject<List<Email>>(jsonString);
-                    //        data.Add(item);
-                    //        jsonString = JsonConvert.SerializeObject(data);
-
-                    //        File.WriteAllText("emails.json", jsonString);
-                    //}
 
                     MessageBox.Show("Email is added successfully!");
                     PaymentVisibility = Visibility.Visible;

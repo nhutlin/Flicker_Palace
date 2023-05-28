@@ -24,5 +24,10 @@ namespace ParkCinema.Views.UserControls
         {
             InitializeComponent();
         }
+
+        private void datagrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

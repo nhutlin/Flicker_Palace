@@ -14,11 +14,11 @@ namespace ParkCinema.Repositories
         {
             return new List<BackgroundImage>
             {
-                new BackgroundImage{Id=1,MovieName="Prestij Meselesi",MovieDate="26 January",ImagePath="/images/prestij.jpg"},
-                new BackgroundImage{Id=2,MovieName="Kutsal Damacana 4",MovieDate="2 February", ImagePath="/images/kutsal.jpg"},
-                new BackgroundImage{Id=3,MovieName="Evdə qalmış",MovieDate="9 February",ImagePath="/images/evde.jpg"},
-                new BackgroundImage{Id=4,MovieName="Ant-Man and the Wasp: Quantumania",MovieDate="16 February",ImagePath="/images/ant.jpg"},
-                new BackgroundImage{Id=5,MovieName="Shazam! Fury of the Gods",MovieDate="16 March",ImagePath="/images/shazam.jpg"},
+                new BackgroundImage{Id=1,MovieName="Prestij Meselesi",MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),ImagePath="/images/prestij.jpg"},
+                new BackgroundImage{Id=2,MovieName="Ant-Man and the Wasp: Quantumania",MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),ImagePath="/images/ant.jpg"},
+                new BackgroundImage{Id=3,MovieName="Kutsal Damacana 4",MovieDate=DateTime.Now.AddDays(1).ToShortDateString().ToString(), ImagePath="/images/kutsal.jpg"},
+                new BackgroundImage{Id=4,MovieName="Shazam! Fury of the Gods",MovieDate=DateTime.Now.AddDays(2).ToShortDateString().ToString(),ImagePath="/images/shazam.jpg"},
+                new BackgroundImage{Id=5,MovieName="Ant-Man and the Wasp: Quantumania",MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),ImagePath="/images/ant.jpg"},
             };
         }
     }

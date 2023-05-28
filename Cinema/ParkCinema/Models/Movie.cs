@@ -25,6 +25,6 @@ namespace ParkCinema.Models
         public int MovieYear { get; set; }
         public string MovieLink { get; set; }
         public double Rating { get; set; }
-        public decimal MoviePrice { get; set; }
+        public int MoviePrice { get; set; }
     }
 }

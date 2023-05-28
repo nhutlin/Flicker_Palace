@@ -12,7 +12,7 @@ namespace ParkCinema.Models
         public string MovieDate { get; set; }
         public string MovieDateTime { get; set; }
         public TimeSpan Duration { get; set; }
-        public decimal Price { get; set; }
+        public int Price { get; set; }
         public string Theater { get; set; }
     }
 }

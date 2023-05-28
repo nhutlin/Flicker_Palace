@@ -194,6 +194,7 @@ namespace ParkCinema.ViewModels
             {
                 var uc = new AdminUC();
                 var vm = new AdminUCViewModel();
+                vm.MainPartVisibility = Visibility.Visible;
                 uc.DataContext = vm;
                 App.MyGrid.Children.RemoveAt(0);
                 App.MyGrid.Children.Add(uc);

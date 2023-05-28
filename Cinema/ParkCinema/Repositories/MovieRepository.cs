@@ -22,12 +22,12 @@ namespace ParkCinema.Repositories
                    new Movie{
                 Id=1,
                 MovieName="Shazam! Fury of the Gods",
-                MovieDate="Since 16 March",
+                MovieDate=DateTime.Now.AddDays(2).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="TR EN RU",
                 Age="12+",
                 ImagePath="/images/shazamCover.jpg",
-                MovieCondition="today",
+                MovieCondition="soon",
                 MovieCountry="USA",
                 MovieDirector="David F. Sandberg",
                 MovieGenre="Fantasy, Action, Thriller, Comedy, Crime, Adventure",
@@ -42,7 +42,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=2,
                 MovieName="Forever",
-                MovieDate="Since 16 March",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN TR",
                 Age="16+",
@@ -62,7 +62,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=3,
                 MovieName="The LockSmith",
-                MovieDate="Since 16 March",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="RU",
                 Age="16+",
@@ -82,7 +82,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=4,
                 MovieName="Epic Tales",
-                MovieDate="Since 16 March",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="RU",
                 Age="6+",
@@ -103,7 +103,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=5,
                 MovieName="Scream 6",
-                MovieDate="Since 9 March",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="RU EN",
                 Age="18+",
@@ -123,7 +123,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=7,
                 MovieName="65",
-                MovieDate="Since 16 March",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN RU",
                 Age="16+",
@@ -144,7 +144,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=8,
                 MovieName="Cocaine Bear",
-                MovieDate="Since 23 February",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="RU",
                 Age="18+",
@@ -164,7 +164,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=9,
                 MovieName="Ant-Man and the Wasp: Quantumania",
-                MovieDate="Since 16 February",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="3D / 2D",
                 MovieLanguages="RU TR",
                 Age="12+",
@@ -184,7 +184,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=10,
                 MovieName="Prestij Meselesi",
-                MovieDate="Since 3 February",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="TR",
                 Age="12+",
@@ -204,7 +204,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=11,
                 MovieName="Gifted",
-                MovieDate="Since 2 February",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN TR",
                 Age="6+",
@@ -224,12 +224,12 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=12,
                 MovieName="Kutsal Damacana 4",
-                MovieDate="Since 26 January",
+                MovieDate=DateTime.Now.AddDays(1).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="TR",
                 Age="16+",
                 ImagePath="/images/kutsalCover.jpg",
-                MovieCondition="today",
+                MovieCondition="soon",
                 MovieCountry="Turkey",
                 MovieDirector="Kamil Çetin",
                 MovieGenre="Comedy",
@@ -244,7 +244,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=13,
                 MovieName="Passengers",
-                MovieDate="Since 26 January",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN RU TR",
                 Age="16+",
@@ -264,12 +264,12 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=14,
                 MovieName="A Beautiful Mind",
-                MovieDate="Since 24 January",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN TR",
                 Age="16+",
                 ImagePath="/images/abeautifulmindCover.jpg",
-                MovieCondition="soon",
+                MovieCondition="today",
                 MovieCountry="USA",
                 MovieDirector="Ron Howard",
                 MovieGenre="Biography, Drama",
@@ -284,7 +284,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=15,
                 MovieName="Chernobyl",
-                MovieDate="Since 23 January",
+                MovieDate=DateTime.Now.AddDays(0).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN RU TR",
                 Age="16+",
@@ -304,7 +304,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=16,
                 MovieName="Julia & Julie",
-                MovieDate="From 22 March",
+                MovieDate=DateTime.Now.AddDays(1).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN TR",
                 Age="16+",
@@ -325,7 +325,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=17,
                 MovieName="Bergen",
-                MovieDate="From 28 March",
+                MovieDate=DateTime.Now.AddDays(1).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="TR",
                 Age="16+",
@@ -345,7 +345,7 @@ namespace ParkCinema.Repositories
             new Movie{
                 Id=18,
                 MovieName="Wonder",
-                MovieDate="From 28 March",
+                MovieDate=DateTime.Now.AddDays(2).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN TR",
                 Age="6+",
@@ -365,7 +365,7 @@ namespace ParkCinema.Repositories
              new Movie{
                 Id=19,
                 MovieName="The Fault In Our Stars",
-                MovieDate="From 1 April",
+                MovieDate=DateTime.Now.AddDays(2).ToShortDateString().ToString(),
                 MovieFormat="2D",
                 MovieLanguages="EN TR",
                 Age="16+",

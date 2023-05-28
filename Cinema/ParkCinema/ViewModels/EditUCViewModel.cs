@@ -49,11 +49,12 @@ namespace ParkCinema.ViewModels
         private string language;
         private string duration;
         private double rating;
-        private decimal price;
+        private int price;
         private string imagePath;
         private string ageLimit;
         private string condition;
         private string movieAbout;
+        private string trailer;
         private List<Movie> movies;
         private List<MovieSchedule> allMovies;
         private Visibility mainVisibility;
@@ -153,7 +154,7 @@ namespace ParkCinema.ViewModels
             get { return rating; }
             set { rating = value; OnPropertyChanged(); }
         }
-        public decimal Price
+        public int Price
         {
             get { return price; }
             set { price = value; OnPropertyChanged(); }
@@ -172,6 +173,11 @@ namespace ParkCinema.ViewModels
         {
             get { return condition; }
             set { condition = value; OnPropertyChanged(); }
+        }
+        public string Trailer
+        {
+            get { return trailer; }
+            set { trailer = value; OnPropertyChanged(); }
         }
 
         public List<MovieSchedule> AllMoviesSchedule
@@ -217,6 +223,7 @@ namespace ParkCinema.ViewModels
                     Year = element.MovieYear;
                     ImagePath = element.ImagePath;
                     MovieAbout = element.About;
+                    Trailer = element.MovieLink;
                 }
             }
         }
@@ -233,6 +240,7 @@ namespace ParkCinema.ViewModels
                     var element = data.FirstOrDefault(e => e.Id == item.Id);
 
                     MovieAbout = element.About;
+                    Trailer = element.MovieLink;
                 }
             }
         }
@@ -351,6 +359,7 @@ namespace ParkCinema.ViewModels
                     element.MovieYear = Year;
                     element.ImagePath = ImagePath;
                     element.About = MovieAbout;
+                    element.MovieLink = Trailer;
 
                     jsonString = JsonConvert.SerializeObject(data);
 
@@ -480,6 +489,7 @@ namespace ParkCinema.ViewModels
                     if (item == Movie)
                     {
                         MovieAbout = Movie.About;
+                        Trailer = Movie.MovieLink;
                     }
                 }
                 if (App.MyGrid.Children.Count == 3)

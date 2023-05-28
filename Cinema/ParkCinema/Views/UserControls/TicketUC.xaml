@@ -9,20 +9,20 @@
     <Border BorderBrush="Black" BorderThickness="2">
         <Grid Background="White">
             <Canvas>
-                <Label Width="200" Height="250" Canvas.Left="26">
-                <Image Stretch="Fill" Source="{Binding ImagePath}" HorizontalAlignment="Left"  VerticalAlignment="Center" />
+                <Label Width="200" Height="250" Canvas.Left="23" Canvas.Top="38">
+                    <Image Stretch="Fill" Source="{Binding ImagePath}" HorizontalAlignment="Left"  VerticalAlignment="Center" />
                 </Label>
-                <TextBlock Width="120" TextWrapping="Wrap" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Text="{Binding Movie.MovieName}" Canvas.Left="65" Canvas.Top="250" VerticalAlignment="Center"/>
-                <TextBlock Margin="10,350,0,0" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Text="{Binding Movie.Theater}"></TextBlock>
-                <TextBlock Margin="110,350,0,0" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Text="{Binding Movie.MovieDate}"></TextBlock>
-                <Label Content="Price : " FontWeight="DemiBold" Canvas.Left="66" Canvas.Top="370" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBlock Margin="120,370,0,0" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Text="{Binding Movie.Price}"></TextBlock>
-                <Label Content="AZN" FontWeight="DemiBold" Canvas.Left="152" Canvas.Top="370" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <Label Content="Row" FontWeight="Bold" FontSize="17" Canvas.Left="52" Canvas.Top="400" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBlock Margin="65,430,0,0" Text="{Binding SelectedRow}" FontSize="16" FontWeight="DemiBold"></TextBlock>
-                <Label Content="Seat" FontWeight="Bold" FontSize="17" Canvas.Left="144" Canvas.Top="400" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBlock Margin="160,430,0,0" Text="{Binding SelectedColumn}" FontSize="16" FontWeight="DemiBold"></TextBlock>
-                <Button Command="{Binding CloseCommand}" CommandParameter="{Binding ElementName=myUserControl}" Style="{StaticResource allButtons}" BorderThickness="0" Background="Transparent" Width="50" Height="50" Margin="200,450,0,0">
+                <TextBlock Width="120" TextWrapping="Wrap" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Text="{Binding Movie.MovieName}" Canvas.Left="63" Canvas.Top="288" VerticalAlignment="Top"/>
+                <TextBlock FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Text="{Binding Movie.Theater}" Canvas.Left="40" Canvas.Top="348" VerticalAlignment="Center"/>
+                <TextBlock FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Text="{Binding Movie.MovieDate}" Canvas.Left="97" Canvas.Top="365" VerticalAlignment="Top"/>
+                <Label Content="Price : " FontWeight="DemiBold" Canvas.Left="51" Canvas.Top="393" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBlock FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Text="{Binding Movie.Price}" Canvas.Left="97" Canvas.Top="393" VerticalAlignment="Top"/>
+                <Label Content="VNĐ" FontWeight="DemiBold" Canvas.Left="152" Canvas.Top="393" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="Row" FontWeight="Bold" FontSize="17" Canvas.Left="51" Canvas.Top="424" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock Text="{Binding SelectedRow}" FontSize="16" FontWeight="DemiBold" Canvas.Left="65" Canvas.Top="457"/>
+                <Label Content="Seat" FontWeight="Bold" FontSize="17" Canvas.Left="143" Canvas.Top="424" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock Text="{Binding SelectedColumn}" FontSize="16" FontWeight="DemiBold" Canvas.Left="165" Canvas.Top="457"/>
+                <Button Command="{Binding CloseCommand}" CommandParameter="{Binding ElementName=myUserControl}" Style="{StaticResource allButtons}" BorderThickness="0" Background="Transparent" Width="50" Height="50" Canvas.Left="208" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="-12">
                     <Image Stretch="Fill" Source="/Icons/close.png"></Image>
                 </Button>
             </Canvas>
