@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800" Height="1900">
     <Grid Background="Black">
         <Canvas Visibility="{Binding PasswordSideVisibility}">
-            <Button Command="{Binding BackToUserCommand}" Style="{StaticResource buyButton}" Background="DarkRed" Width="200" Height="50" Content="Back to User Side" Panel.ZIndex="1" Canvas.Top="50" Canvas.Left="50" FontSize="20" FontWeight="Bold" Foreground="White"></Button>
+            <Button Command="{Binding BackToUserCommand}" Style="{StaticResource buyButton}" Background="DarkRed" Width="200" Height="50" Content="Back to User Side" Panel.ZIndex="1" Canvas.Top="42" Canvas.Left="1133" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"></Button>
             <Image Source="/Images/movieback.jpg"></Image>
             <TextBlock FontSize="40" Foreground="White" FontWeight="DemiBold"  Text="Welcome, Admin!" HorizontalAlignment="Left" Canvas.Top="339" VerticalAlignment="Center" Canvas.Left="612"></TextBlock>
             <Label Content="Email" Canvas.Top="450" Canvas.Left="520" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" ></Label>
@@ -17,14 +17,14 @@
             <TextBox Text="{Binding Password}" Width="220" Height="30" Canvas.Top="550" Canvas.Left="659" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <Button Command="{Binding LoginCommand}" Content="Log in" Canvas.Top="623" Canvas.Left="658" Width="100" Height="35" FontSize="18" FontWeight="Bold" Style="{StaticResource buyButton}" Background="DarkRed" HorizontalAlignment="Left" VerticalAlignment="Center"></Button>
         </Canvas>
-        
+
         <Grid Visibility="{Binding MainPartVisibility}">
             <Label Width="1300" Height="400" VerticalAlignment="Top" >
-            <Image Stretch="Fill" Source="/Images/background.jpg"></Image>
+                <Image Stretch="Fill" Source="/Images/background.jpg"></Image>
             </Label>
             <TextBlock Foreground="White" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Text="ParkAdmin" FontWeight="Bold" FontSize="35" Margin="10,6,0,0"></TextBlock>
             <Label Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,-6,0,0" Height="60">
-            <Image Stretch="Fill" Source="/Icons/admin.png"></Image>
+                <Image Stretch="Fill" Source="/Icons/admin.png"></Image>
             </Label>
             <Button Command="{Binding BackToUserCommand}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,370,0" Width="150" Height="40" Content="Back To User Side" FontSize="16" FontWeight="Bold" Style="{StaticResource mainButtons}" Background="DarkRed" Foreground="White"></Button>
             <Button Command="{Binding AddMovieClickCommand}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,200,0" Width="150" Height="40" Content="Add Movie" FontSize="20" FontWeight="Bold" Style="{StaticResource mainButtons}" Background="White" Foreground="Black"></Button>

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -178,6 +179,30 @@ namespace ParkCinema.ViewModels
         {
             get { return trailer; }
             set { trailer = value; OnPropertyChanged(); }
+        }
+
+        private List<string> theaters;
+
+        public List<string> Theaters
+        {
+            get { return theaters; }
+            set { theaters = value; OnPropertyChanged("Dates"); }
+        }
+
+        private List<string> dates;
+
+        public List<string> Dates
+        {
+            get { return dates; }
+            set { dates = value; OnPropertyChanged("Dates"); }
+        }
+
+        private List<string> dateTimes;
+
+        public List<string> DateTimes
+        {
+            get { return dateTimes; }
+            set { dateTimes = value; OnPropertyChanged("Dates"); }
         }
 
         public List<MovieSchedule> AllMoviesSchedule
@@ -386,6 +411,32 @@ namespace ParkCinema.ViewModels
             var vm = new AdminSeatsUCViewModel();
             Data = vm.Data;
             AllMoviesSchedule = newMovies;
+
+            Theaters = new List<string>();
+            Theaters.Add("Flicker Palace Gò Vấp");
+            Theaters.Add("Flicker Palace Linh Trung");
+            Theaters.Add("Flicker Palace Tân Bình");
+
+            Dates = new List<string>();
+            Dates.Add(DateTime.Now.AddDays(0).ToShortDateString().ToString());
+            Dates.Add(DateTime.Now.AddDays(1).ToShortDateString().ToString());
+            Dates.Add(DateTime.Now.AddDays(2).ToShortDateString().ToString());
+            Dates.Add(DateTime.Now.AddDays(3).ToShortDateString().ToString());
+            Dates.Add(DateTime.Now.AddDays(4).ToShortDateString().ToString());
+
+            DateTimes = new List<string>();
+            DateTime now = DateTime.Now;
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(0).Day, 15, 0, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(0).Day, 15, 30, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(1).Day, 17, 0, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(1).Day, 17, 30, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(2).Day, 18, 0, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(2).Day, 18, 30, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(3).Day, 20, 0, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(3).Day, 20, 30, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(4).Day, 22, 0, 0).ToShortTimeString().ToString());
+            DateTimes.Add(new DateTime(now.Year, now.Month, DateTime.Now.AddDays(4).Day, 22, 30, 0).ToShortTimeString().ToString());
+
             MainVisibility = Visibility.Visible;
             PlotVisibility = Visibility.Hidden;
             PosterVisibility = Visibility.Hidden;

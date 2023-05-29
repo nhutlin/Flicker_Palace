@@ -143,7 +143,14 @@ namespace ParkCinema.ViewModels
                         break;
                     }
                 }
-                
+                foreach (var item in App.ScheduleRepo.MovieSchedules)
+                {
+                    if (item.MovieName == vm.Movie.MovieName)
+                    {
+                        vm.AllMoviesSchedule.Add(item);
+                    }
+                }
+
                 uc.DataContext = vm;
                 App.MyGrid.Children.Add(uc);
             });

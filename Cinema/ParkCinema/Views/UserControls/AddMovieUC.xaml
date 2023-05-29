@@ -17,10 +17,10 @@
                      FontSize="26" FontWeight="ExtraBlack" Width="1150"
                      ></TextBox>
             <Button Command="{Binding SearchCommand}" Style="{StaticResource allButtons}" Background="Black" Foreground="White" FontSize="26"
-                    FontWeight="ExtraBlack" Width="200">Search</Button>
+                    FontWeight="ExtraBlack" Width="166">Search</Button>
         </StackPanel>
 
-        <Button Command="{Binding BackToAdminCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1355,10,0,0" Width="283" Height="40" Content="Back To Admin Side" FontSize="16" FontWeight="Bold" Style="{StaticResource mainButtons}" Background="DarkRed" Foreground="White"/>
+        <Button Command="{Binding BackToAdminCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1316,9,0,0" Width="214" Height="41" Content="Back To Admin Side" FontSize="16" FontWeight="Bold" Style="{StaticResource mainButtons}" Background="DarkRed" Foreground="White"/>
 
     </Grid>
 </UserControl>

@@ -78,14 +78,7 @@ namespace ParkCinema.ViewModels
                 App.MyGrid.Children.RemoveAt(0);
                 App.MyGrid.Children.Add(uc);
             });
-            AppleClickCommand = new RelayCommand((obj) =>
-            {
-                System.Diagnostics.Process.Start("https://apps.apple.com/us/app/park-cinema/id1119977600?ls=1");
-            });
-            AndroidClickCommand = new RelayCommand((obj) =>
-            {
-                System.Diagnostics.Process.Start("https://play.google.com/store/apps/details?id=az.parkcinema.app&hl=ru");
-            });
+
             BuyTicketCommand = new RelayCommand((obj) =>
             {
                 var uc = new ScheduleUC();

@@ -75,7 +75,31 @@
             <Button Command="{Binding DeleteMovieCommand}" CommandParameter="{Binding ElementName=myCanvas}" Canvas.Left="50" Width="130" Height="40" Style="{StaticResource buyButton}" Content="Delete Movie" FontWeight="Bold" FontSize="17" Background="Red" Canvas.Top="483" HorizontalAlignment="Center" VerticalAlignment="Top"></Button>
         </Canvas>
         <Canvas Grid.Row="1" Visibility="{Binding SeatsVisibility}">
-            <ComboBox FontSize="15" FontWeight="Bold" Canvas.Left="298" Width="250" Height="30" Name="myComboBox" ItemsSource="{Binding AllMoviesSchedule}" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <ComboBox ItemsSource="{Binding Theaters}" Foreground="Black" Name="comboBox1" Visibility="{Binding IsComboBoxVisible}" Height="30" Width="190" VerticalAlignment="Top" HorizontalAlignment="Center" Canvas.Left="60" Canvas.Top="66" FontSize="14" FontWeight="Bold" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <i:InvokeCommandAction Command="{Binding SelectedTheaterCommand}"
+                                           CommandParameter="{Binding ElementName=comboBox2,Path=SelectedItem}"></i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ComboBox>
+            <ComboBox ItemsSource="{Binding Dates}" Foreground="Black" Name="comboBox2" Visibility="{Binding IsComboBoxVisible}" Height="30" Width="190" VerticalAlignment="Center" HorizontalAlignment="Left" Canvas.Left="325" Canvas.Top="66" FontSize="14" FontWeight="Bold" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <i:InvokeCommandAction Command="{Binding SelectedTheaterCommand}"
+                                           CommandParameter="{Binding ElementName=comboBox2,Path=SelectedItem}"></i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ComboBox>
+            <ComboBox ItemsSource="{Binding DateTimes}" Foreground="Black" Name="comboBox3" Visibility="{Binding IsComboBoxVisible}" Height="30" Width="190" VerticalAlignment="Center" HorizontalAlignment="Left" Canvas.Left="593" Canvas.Top="66" FontSize="14" FontWeight="Bold" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <i:InvokeCommandAction Command="{Binding SelectedTheaterCommand}"
+                                           CommandParameter="{Binding ElementName=comboBox2,Path=SelectedItem}"></i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ComboBox>
+            <ComboBox FontSize="15" FontWeight="Bold" Canvas.Left="232" Width="369" Height="30" Name="myComboBox" ItemsSource="{Binding AllMoviesSchedule}" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
