@@ -15,12 +15,7 @@
         </DockPanel>
         <Canvas>
             <Image Stretch="Fill" Width="1400" Source="/images/movieback.jpg"></Image>
-            <Button Style="{StaticResource allButtons}" Command="{Binding AppleClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1249" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Image Source="/icons/apple.png"></Image>
-            </Button>
-            <Button Style="{StaticResource allButtons}"  Command="{Binding AndroidClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1294" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Image Source="/icons/android.png"></Image>
-            </Button>
+
         </Canvas>
         <ComboBox Name="myComboBox" FontWeight="Bold" Margin="165,250,0,0" Height="30" Width="190" VerticalAlignment="Top" HorizontalAlignment="Left" ItemsSource="{Binding Dates}" >
             <i:Interaction.Triggers>

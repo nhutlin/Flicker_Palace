@@ -146,7 +146,7 @@ namespace ParkCinema.ViewModels
             Theaters = new List<string>();
             Theaters.Add("Flicker Palace Gò Vấp");
             Theaters.Add("Flicker Palace Linh Trung");
-            Theaters.Add("Flicker PalaceTân Bình");
+            Theaters.Add("Flicker Palace Tân Bình");
 
             LogoClickCommand = new RelayCommand((obj) =>
             {

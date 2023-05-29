@@ -273,22 +273,22 @@ namespace ParkCinema.ViewModels
             IsCardAvailable = true;
             if (CardNumber.ToString().Length != 16)
             {
-                MessageBox.Show("Card number must have 16 digits");
+                MessageBox.Show("Số thẻ phải có 16 chữ số");
                 IsCardAvailable = false;
             }
             if (Month > 12 || Month < 1)
             {
-                MessageBox.Show("Month must be between 1 and 12");
+                MessageBox.Show("Tháng phải từ 1 đến 12!");
                 IsCardAvailable = false;
             }
             if (Year.ToString().Length != 4)
             {
-                MessageBox.Show("Year length must be 4");
+                MessageBox.Show("Năm phải có độ dài là 4!");
                 IsCardAvailable = false;
             }
             if (Year < DateTime.Now.Year)
             {
-                MessageBox.Show("Month must not be lated");
+                MessageBox.Show("Tháng không được trễ hơn hiện tại!");
                 IsCardAvailable = false;
             }
 
@@ -468,7 +468,7 @@ namespace ParkCinema.ViewModels
                 }
                 else
                 {
-                    MessageBox.Show("You have to choose count of person(people)");
+                    MessageBox.Show("Bạn phải chọn số lượng vé!");
                 }
             });
             NextPaymentButtonClickCommand = new RelayCommand((obj) =>
@@ -484,7 +484,7 @@ namespace ParkCinema.ViewModels
                 }
                 else
                 {
-                    MessageBox.Show("Place quantity must equal the number of tickets you've specified");
+                    MessageBox.Show("Số lượng đặt chổ phải bằng số lượng vé bạn đã chỉ định!");
                 }
             });
             BackSessionButtonClickCommand = new RelayCommand((obj) =>
@@ -553,31 +553,38 @@ namespace ParkCinema.ViewModels
                 {
                     data2.Add(item.UserEmail);
                 }
-                
-                if (EmailName != null)
+                if (EmailName == null || Password == null || UserName == null || Surname == null)
                 {
-                    if (data2.Contains(EmailName))
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin ");
+                    IsAvailable = false;
+                }
+                else if (EmailName != null && Password != null)
+                {
+                    
+                    if (!EmailName.Contains("@gmail.com"))
+                    {
+                        MessageBox.Show("Gmail không chính xác !");
+                        IsAvailable = false;
+                    }
+                    else if (data2.Contains(EmailName))
                     {
                         MessageBox.Show("Gmail đã được sử dụng. Vui lòng chọn gmail khác!");
                         IsAvailable = false;
                     }
-                    else if (!EmailName.Contains("@gmail.com"))
+
+                    if (Password.Length < 8)
                     {
-                        MessageBox.Show("You can only add Gmail!");
+                        MessageBox.Show("Password phải có độ dài lớn hơn hoặc bằng 8!");
+                        IsAvailable = false;
+                    }
+                    if (!Password.ToString().Any(char.IsUpper))
+                    {
+                        MessageBox.Show("Password phải chứa ít nhất 1 ký tự in hoa!");
                         IsAvailable = false;
                     }
                 }
 
-                if (Password.Length < 8)
-                {
-                    MessageBox.Show("Password Length must be greater than or equal to 8");
-                    IsAvailable = false;
-                }
-                else if (!Password.ToString().Any(char.IsUpper))
-                {
-                    MessageBox.Show("Password must contain at least one uppercase letter!");
-                    IsAvailable = false;
-                }
+                
                 if (IsAvailable == true)
                 {
                     var mail = new Email();
@@ -599,7 +606,7 @@ namespace ParkCinema.ViewModels
                     string jsonString = JsonConvert.SerializeObject(data);
                     File.WriteAllText("emails.json", jsonString);
 
-                    MessageBox.Show("Email is added successfully!");
+                    MessageBox.Show("Email đăng ký thành công!");
                     PaymentVisibility = Visibility.Visible;
                     SignUpVisibility = Visibility.Hidden;
                 }

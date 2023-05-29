@@ -29,8 +29,8 @@
                 <StackPanel Margin="80,220,0,0">
                     <Image Height="100" Source="/Icons/person.png"></Image>
                     <TextBlock FontSize="20" HorizontalAlignment="Center" Text="Adult"></TextBlock>
-                    <TextBlock Width="25" Margin="-35,0,0,0" FontSize="20" Text="{Binding Movie.Price}"></TextBlock>
-                    <TextBlock Margin="57,-26,0,0" FontSize="20" Text="AZN"></TextBlock>
+                    <TextBlock Width="25" Margin="-35,0,40,0" FontSize="20" Text="{Binding Movie.Price}"></TextBlock>
+                    <TextBlock Margin="57,-26,0,0" FontSize="20" Text="VNĐ" Width="42"></TextBlock>
                     <TextBlock Foreground="Gray" FontSize="14" Text="Maximum 10 tickets "></TextBlock>
                 </StackPanel>
 
@@ -49,8 +49,8 @@
                     <TextBlock FontSize="20" FontWeight="DemiBold" Text="Adults: " Margin="100,20,0,0"></TextBlock>
                     <TextBlock FontSize="20" FontWeight="DemiBold" Text="{Binding Count}" Margin="180,20,0,0"></TextBlock>
                     <Image Width="300" Height="200" Margin="0,50,0,0" Source="/Icons/ticket.png"></Image>
-                    <TextBlock FontSize="30" FontWeight="Bold" Margin="110,110,0,0" HorizontalAlignment="Center" Text="{Binding TotalPrice}"></TextBlock>
-                    <TextBlock FontSize="30" FontWeight="Bold" Margin="100,150,0,0" Text="AZN"></TextBlock>
+                    <TextBlock FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Text="{Binding TotalPrice}" Canvas.Left="78" Canvas.Top="116"/>
+                    <TextBlock FontSize="30" FontWeight="Bold" Margin="100,150,0,0" Text="VNĐ"></TextBlock>
                     <Image Width="100" Source="/Icons/nextarrow.png"  Margin="260,100,0,0"></Image>
                     <Button Command="{Binding NextPlacesButtonClickCommand}" Style="{StaticResource allButtons}" FontWeight="DemiBold" FontSize="20" Content="Next" Margin="280,133,0,0"></Button>
                 </Canvas>
@@ -281,8 +281,8 @@
                 <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Text="Adults: " Margin="100,-565,0,0"></TextBlock>
                 <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Text="{Binding Count}" Margin="180,-565,0,0"></TextBlock>
                 <Image Width="300" Height="180" Margin="0,70,0,0" Source="/Icons/ticket.png"></Image>
-                <TextBlock FontSize="30" FontWeight="Bold" Margin="110,110,0,0" HorizontalAlignment="Center" Text="{Binding TotalPrice}"></TextBlock>
-                <TextBlock FontSize="30" FontWeight="Bold" Margin="100,150,0,0" Text="AZN"></TextBlock>
+                <TextBlock FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Text="{Binding TotalPrice}" Canvas.Left="78" Canvas.Top="118"/>
+                <TextBlock FontSize="30" FontWeight="Bold" Margin="100,150,0,0" Text="VNĐ"></TextBlock>
                 <Image Width="100"  Source="/Icons/nextarrow.png"  Margin="260,100,0,0"></Image>
                 <Image Width="100" Source="/Icons/backarrow.png"  Margin="-60,100,0,0"></Image>
                 <Button Command="{Binding NextPaymentButtonClickCommand}" Style="{StaticResource allButtons}" FontWeight="DemiBold" FontSize="20" Content="Next" Margin="280,133,0,0"></Button>
@@ -294,13 +294,13 @@
                     <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Margin="110,-600,0,0" Text="{Binding Movie.MovieDateTime}"></TextBlock>
                     <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Margin="200,-600,0,0" Text="{Binding Movie.Theater}"></TextBlock>
                     <TextBlock FontSize="20" FontWeight="Bold" Text="Total Amount :" Margin="30,-270,0,0"></TextBlock>
-                    <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Margin="190,-510,0,0" Text="{Binding TotalPrice}"></TextBlock>
-                    <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Margin="220,-510,0,0" Text="AZN"></TextBlock>
+                    <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Text="{Binding TotalPrice}" Canvas.Left="174" Canvas.Top="-270" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Text="VNĐ" Canvas.Left="241" Canvas.Top="-270"/>
                     <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Text="Adults: " Margin="100,-560,0,0"></TextBlock>
                     <TextBlock FontSize="20" Height="30" FontWeight="DemiBold" Text="{Binding Count}" Margin="180,-560,0,0"></TextBlock>
-                    <Image Width="300" Height="180" Margin="0,70,0,0" Source="/Icons/ticket.png"></Image>
-                    <TextBlock FontSize="30" FontWeight="Bold" Margin="110,110,0,0" HorizontalAlignment="Center" Text="{Binding TotalPrice}"></TextBlock>
-                    <TextBlock FontSize="30" FontWeight="Bold" Margin="100,150,0,0" Text="AZN"></TextBlock>
+                    <Image Width="300" Height="196" Source="/Icons/ticket.png" HorizontalAlignment="Center" Canvas.Top="54" VerticalAlignment="Top"/>
+                    <TextBlock FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Text="{Binding TotalPrice}" Canvas.Left="82" Canvas.Top="118" VerticalAlignment="Top"/>
+                    <TextBlock FontSize="30" FontWeight="Bold" Text="VNĐ" Canvas.Left="87" Canvas.Top="150"/>
                     <Image Width="100" Source="/Icons/backarrow.png"  Margin="-60,100,0,0"></Image>
                     <TextBlock Height="30" FontSize="20" FontWeight="DemiBold" Text="Reserved seats : " Margin="0,-450,0,0"></TextBlock>
                     <TextBlock FontSize="15" FontWeight="DemiBold" Width="300" Margin="160,-370,0,0" Height="100" TextWrapping="Wrap" Text="{Binding Seat}"></TextBlock>

@@ -75,35 +75,7 @@
                         </Style>
                     </RadioButton.Resources>
                 </RadioButton>
-
-                <Button Style="{StaticResource allButtons}" Command="{Binding FaceBookClickCommand}" Width="50" Canvas.Top="653" Canvas.Left="1152" HorizontalAlignment="Center" VerticalAlignment="Top">
-                    <Image Source="/icons/facebook.png" HorizontalAlignment="Left" VerticalAlignment="Center">
-                        <Image.Effect>
-                            <DropShadowEffect ShadowDepth="3"></DropShadowEffect>
-                        </Image.Effect>
-                    </Image>
-                </Button>
-                <Button Style="{StaticResource allButtons}" Command="{Binding TwitterClickCommand}" Width="50" Canvas.Top="657" Canvas.Left="1212" HorizontalAlignment="Center" VerticalAlignment="Top">
-                    <Image  Source="/icons/twitter.png" HorizontalAlignment="Left" VerticalAlignment="Center">
-                        <Image.Effect>
-                            <DropShadowEffect ShadowDepth="3"></DropShadowEffect>
-                        </Image.Effect>
-                    </Image>
-                </Button>
-                <Button Style="{StaticResource allButtons}" Command="{Binding YoutubeClickCommand}" Width="80" Canvas.Top="663" Canvas.Left="1265">
-                    <Image Source="/icons/youtube.png" HorizontalAlignment="Left" VerticalAlignment="Center">
-                        <Image.Effect>
-                            <DropShadowEffect Color="WhiteSmoke" ShadowDepth="2" Direction="200"></DropShadowEffect>
-                        </Image.Effect>
-                    </Image>
-                </Button>
-                <Button Command="{Binding AdminClickCommand}" Style="{StaticResource buyButton2}" Canvas.Left="1100" Canvas.Top="15" Content="Admin" FontSize="25" FontWeight="DemiBold" Foreground="White"></Button>
-                <Button Style="{StaticResource allButtons}" Command="{Binding AppleClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1249" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                    <Image Source="/icons/apple.png"></Image>
-                </Button>
-                <Button Style="{StaticResource allButtons}"  Command="{Binding AndroidClickCommand}" Width="30" Canvas.Top="20" Canvas.Left="1294" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                    <Image Source="/icons/android.png"></Image>
-                </Button>
+                <Button Command="{Binding AdminClickCommand}" Style="{StaticResource buyButton2}" Canvas.Left="1193" Canvas.Top="10" Content="Admin" FontSize="25" FontWeight="DemiBold" Foreground="White"></Button>
             </Canvas>
             <Canvas>
                 <Button IsDefault="True" Command="{Binding TodayClickCommand}" Style="{StaticResource mainButtons}" Width="270" Height="60" Margin="80,738,0,41" HorizontalAlignment="Left" Content="Today"  ></Button>
@@ -133,9 +105,9 @@
                                HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
                                VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
                                SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
-                                        
+
                                     </Border>
-                                    
+
                                     <ControlTemplate.Triggers>
                                         <MultiTrigger>
                                             <MultiTrigger.Conditions>
@@ -178,7 +150,7 @@
                                         </Trigger>
                                     </ControlTemplate.Triggers>
                                 </ControlTemplate>
-                                
+
                             </Setter.Value>
                         </Setter>
                     </Style>
@@ -187,15 +159,15 @@
                     <i:EventTrigger EventName="SelectionChanged">
                         <i:InvokeCommandAction Command="{Binding MovieNameClickCommand}" 
                                            CommandParameter="{Binding ElementName=listbox,Path=SelectedItem}"></i:InvokeCommandAction>
-                        
+
                     </i:EventTrigger>
-                    
+
                 </i:Interaction.Triggers>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Border Background="Transparent"  BorderThickness="0" CornerRadius="20" Width="250" Height="300">
                             <Grid Height="300" Name="myGrid" Background="Transparent" Margin="0,0,8,-4" >
-                                
+
                                 <Image Cursor="Hand" Height="170" Width="115" Margin="-150,15,0,50" Stretch="Fill" Style="{StaticResource imgStyle}" Name="image" Source="{Binding ImagePath}"></Image>
                                 <TextBlock Margin="135,90,0,0" Background="Transparent" Foreground="WhiteSmoke" Text="{Binding MoviePrice}" FontFamily="Segoe ui"></TextBlock>
                                 <TextBlock Margin="135,45,0,150" VerticalAlignment="Top" HorizontalAlignment="Left" Style="{StaticResource txtblck}" TextWrapping="Wrap" Text="{Binding MovieName}" FontWeight="Bold" FontFamily="Segoe ui" Background="Transparent"  Name="filmnametxtBox" Foreground="WhiteSmoke" FontSize="15" Width="110" />
@@ -222,7 +194,7 @@
                 <TextBlock Margin="255,125,0,0" Style="{StaticResource txtblck}" FontSize="16" Foreground="White" FontWeight="Bold" Text="IMAX for Students"></TextBlock>
             </Canvas>
             <Canvas Margin="0,2500,0,0" Height="100" Background="#2b3236">
-                <Label Margin="80,20,0,0" Foreground="DarkGray">© Park Cinema, 2023</Label>
+                <Label Margin="80,20,0,0" Foreground="DarkGray">© Flicker Palace, 2023</Label>
                 <Image Height="30" Width="30" Margin="82,50,0,0" Source="/icons/visa.png"></Image>
                 <Image Height="30" Width="30" Margin="117,50,0,0" Source="/icons/master.png"></Image>
                 <Label Width="250" Height="100" Margin="1200,0,0,0" Background="#6e6d6d">
@@ -232,8 +204,8 @@
                 </Label>
             </Canvas>
             <StackPanel Margin="1020,980,0,0">
-                <TextBlock Foreground="Red" Margin="10,-170,0,0" FontSize="25" FontWeight="Bold">Tickets booking</TextBlock>
-                <TextBlock Foreground="White" FontSize="20" Width="190" Margin="-100,-130,0,0" FontWeight="DemiBold" TextWrapping="Wrap" >+994 12 598 74 14 119 ( charges apply )</TextBlock>
+                <TextBlock Foreground="Red" Margin="10,-170,0,0" FontSize="25" FontWeight="Bold" Width="230">Tickets booking</TextBlock>
+                <TextBlock Foreground="White" FontSize="20" Width="190" Margin="-100,-130,0,0" FontWeight="DemiBold" TextWrapping="Wrap" >+ 0987654321</TextBlock>
                 <Image Width="300" Height="200" Source="/Icons/ticketBanner.png" Margin="-35,-200,0,0"></Image>
             </StackPanel>
             <Button Command="{Binding HappyClickCommand}" Style="{StaticResource allButtons}" Margin="990,0,0,200" Width="300" Height="400">
