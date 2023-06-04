@@ -85,7 +85,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
-    <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Models\Email.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieSchedule.cs" />

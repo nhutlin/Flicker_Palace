@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
@@ -33,7 +34,7 @@ namespace ParkCinema.ViewModels
         }
         public MovieCellViewModel()
         {
-            AddMovieClickCommand = new RelayCommand((obj) =>
+            AddMovieClickCommand = new RelayCommand(async (obj) =>
             {
                 var mymovie = new Movie();
                 mymovie.Id = App.MovieRepo.Movies[App.MovieRepo.Movies.Count - 1].Id + 1;
@@ -56,16 +57,24 @@ namespace ParkCinema.ViewModels
                 mymovie.MovieLink = "";
 
                 
-                App.MovieRepo.Movies.Add(mymovie); 
-                var data = new List<Movie>();
-
-                foreach (var item in App.MovieRepo.Movies)
+                App.MovieRepo.Movies.Add(mymovie);
+                string jsonString = JsonConvert.SerializeObject(mymovie);
+                using (var client = new HttpClient())
                 {
-                    data.Add(item);
-                }
+                    var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-                string jsonString = JsonConvert.SerializeObject(data);
-                File.WriteAllText("movies.json", jsonString);
+                    var response = await client.PostAsync("http://21521654.pythonanywhere.com/addmovie", content);
+
+                }
+                //var data = new List<Movie>();
+
+                //foreach (var item in App.MovieRepo.Movies)
+                //{
+                //    data.Add(item);
+                //}
+
+                //string jsonString = JsonConvert.SerializeObject(data);
+                //File.WriteAllText("movies.json", jsonString);
             });
         }
 

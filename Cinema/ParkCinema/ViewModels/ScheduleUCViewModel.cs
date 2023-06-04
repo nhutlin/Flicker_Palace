@@ -141,12 +141,12 @@ namespace ParkCinema.ViewModels
             Movies = new ObservableCollection<MovieSchedule>(App.ScheduleRepo.MovieSchedules);
             for (int i = 0; i < 6; i++)
             {
-                Dates.Add(DateTime.Now.AddDays(i).ToShortDateString().ToString());
+                Dates.Add(DateTime.Now.AddDays(i).ToString("dd/MM/yyyy"));
             }
             Theaters = new List<string>();
-            Theaters.Add("Flicker Palace Gò Vấp");
-            Theaters.Add("Flicker Palace Linh Trung");
-            Theaters.Add("Flicker Palace Tân Bình");
+            Theaters.Add("Flicker Palace New York");
+            Theaters.Add("Flicker Palace Ohio");
+            Theaters.Add("Flicker Palace Las Vegas");
 
             LogoClickCommand = new RelayCommand((obj) =>
             {
@@ -158,14 +158,6 @@ namespace ParkCinema.ViewModels
                 uc.DataContext = vm;
                 App.MyGrid.Children.RemoveAt(0);
                 App.MyGrid.Children.Add(uc);
-            });
-            AppleClickCommand = new RelayCommand((obj) =>
-            {
-                System.Diagnostics.Process.Start("https://apps.apple.com/us/app/park-cinema/id1119977600?ls=1");
-            });
-            AndroidClickCommand = new RelayCommand((obj) =>
-            {
-                System.Diagnostics.Process.Start("https://play.google.com/store/apps/details?id=az.parkcinema.app&hl=ru");
             });
             SeatClickCommand = new RelayCommand((obj) =>
             {

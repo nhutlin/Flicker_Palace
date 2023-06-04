@@ -29,7 +29,7 @@
                 <StackPanel Margin="80,220,0,0">
                     <Image Height="100" Source="/Icons/person.png"></Image>
                     <TextBlock FontSize="20" HorizontalAlignment="Center" Text="Adult"></TextBlock>
-                    <TextBlock Width="25" Margin="-35,0,40,0" FontSize="20" Text="{Binding Movie.Price}"></TextBlock>
+                    <TextBlock Width="63" Margin="0,0,40,0" FontSize="20" Text="{Binding Movie.Price}"></TextBlock>
                     <TextBlock Margin="57,-26,0,0" FontSize="20" Text="VNĐ" Width="42"></TextBlock>
                     <TextBlock Foreground="Gray" FontSize="14" Text="Maximum 10 tickets "></TextBlock>
                 </StackPanel>

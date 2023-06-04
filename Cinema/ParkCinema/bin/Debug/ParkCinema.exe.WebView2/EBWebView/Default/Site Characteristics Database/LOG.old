@@ -1,5 +1,3 @@
-2023/05/29-11:32:09.339 1d70 Log #3: 14 ops saved to Table #4 OK
-2023/05/29-11:32:09.340 1d70 Archiving D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\ParkCinema.exe.WebView2\EBWebView\Default\Site Characteristics Database/000003.log: OK
-2023/05/29-11:32:09.340 1d70 Table #4: 14 entries OK
-2023/05/29-11:32:09.341 1d70 Archiving D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\ParkCinema.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
-2023/05/29-11:32:09.346 1d70 **** Repaired leveldb D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\ParkCinema.exe.WebView2\EBWebView\Default\Site Characteristics Database; recovered 1 files; 318 bytes. Some data may have been lost. ****
+2023/06/04-14:20:02.893 2584 Reusing MANIFEST D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\ParkCinema.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+2023/06/04-14:20:02.894 2584 Recovering log #9
+2023/06/04-14:20:02.894 2584 Reusing old log D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\ParkCinema.exe.WebView2\EBWebView\Default\Site Characteristics Database/000009.log 

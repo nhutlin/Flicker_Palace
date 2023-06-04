@@ -22,7 +22,7 @@
   },
   {
     "MovieName": "Forever",
-    "ImagePath": "/images/foreverCover.jpg",
+    "ImagePath": "D:\\Downloads\\image_phishing60.png",
     "MovieDate": "5/28/2023",
     "Age": "16+",
     "MovieFormat": "2D",
@@ -38,7 +38,7 @@
     "MovieYear": 2014,
     "MovieLink": "https://www.youtube.com/watch?v=-JmVnyJ16d4",
     "Rating": 8.2,
-    "MoviePrice": 10,
+    "MoviePrice": 90000,
     "Id": 2
   },
   {

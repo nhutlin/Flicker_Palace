@@ -242,7 +242,7 @@ D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-x86\native\WebView2Loader.
 D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
 D:\Downloads\Cinema\ParkCinema\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
 D:\Downloads\Cinema\ParkCinema\obj\Debug\ParkCinema_Content.g.cs
-D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\obj\Debug\ParkCinema_Content.g.cs
 D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
 D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
 D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Documents\LapTrinhMang\Flicker_Palace\Cinema\ParkCinema\obj\Debug\ParkCinema_Content.g.cs

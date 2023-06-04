@@ -26,7 +26,7 @@ namespace ParkCinema
         {
             MovieRepo = new MovieRepository();
             ScheduleRepo = new ScheduleRepository();
-            EmailRepo=new EmailRepository();
+            EmailRepo= new EmailRepository();
         }
     }
 }
