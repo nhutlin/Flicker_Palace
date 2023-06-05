@@ -23,43 +23,61 @@ using Color = System.Windows.Media.Color;
 using Newtonsoft.Json;
 using Brushes = System.Windows.Media.Brushes;
 using System.Windows.Markup;
+using System.Net.Http;
+using System.Windows.Documents;
 
 namespace ParkCinema.ViewModels
 {
 
     public class SeatUCViewModel : BaseViewModel
     {
-        private List<SelectedButtons> LoadListFromFile()
+        private async Task<List<SelectedButtons>> LoadListFromFileAsync()
         {
             // Load the list from the file, or create a new list if the file doesn't exist
-            string filePath = "toggleButtonState.json";
-            if (File.Exists(filePath))
-            {
-                string json = File.ReadAllText(filePath);
-                return JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
-            }
-            else
-            {
-                return new List<SelectedButtons>();
-            }
+            string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
+
+            HttpClient client = new HttpClient();
+
+            HttpResponseMessage response = await client.GetAsync(apiUrl);
+            string responseContent = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+            //string filePath = "toggleButtonState.json";
+            //if (File.Exists(filePath))
+            //{
+            //    string json = File.ReadAllText(filePath);
+            //    return JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
+            //}
+            //else
+            //{
+            //    return new List<SelectedButtons>();
         }
-        private void SaveListToFile(List<SelectedButtons> list)
+    
+        private async void SaveListToFile(List<SelectedButtons> list)
         {
             // Load the existing data from the file, or create a new list if the file doesn't exist
-            string filePath = "toggleButtonState.json";
-            List<SelectedButtons> existingData = new List<SelectedButtons>();
-            if (File.Exists(filePath))
+            string jsonString = JsonConvert.SerializeObject(list);
+            using (var client = new HttpClient())
             {
-                string json = File.ReadAllText(filePath);
-                existingData = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
+                var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync("https://21521809.pythonanywhere.com/addtogglebutton", content);
+
             }
+            //string filePath = "toggleButtonState.json";
+            //List<SelectedButtons> existingData = new List<SelectedButtons>();
+            //if (File.Exists(filePath))
+            //{
+            //    string json = File.ReadAllText(filePath);
+            //    existingData = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
+            //}
 
-            // Add the new list to the existing data
-            existingData.AddRange(list);
+            //// Add the new list to the existing data
+            //existingData.AddRange(list);
 
-            // Serialize the combined data to JSON and write it to the file
-            string combinedJson = JsonConvert.SerializeObject(existingData);
-            File.WriteAllText(filePath, combinedJson);
+            //// Serialize the combined data to JSON and write it to the file
+            //string combinedJson = JsonConvert.SerializeObject(existingData);
+            //File.WriteAllText(filePath, combinedJson);
         }
         public RelayCommand SelectedCommand { get; set; }
         public RelayCommand NextPlacesButtonClickCommand { get; set; }
@@ -354,7 +372,7 @@ namespace ParkCinema.ViewModels
             }
 
         }
-        private void PlaceClick(Grid grid)
+        private async void PlaceClick(Grid grid)
         {
             List<int> numbers = new List<int>();
             foreach (UIElement child in grid.Children)
@@ -363,12 +381,18 @@ namespace ParkCinema.ViewModels
                 ToggleButton toggleButton = child as ToggleButton;
                 if (toggleButton != null && !AllSeatNames.Any(m => m.ButtonName == toggleButton.Name))
                 {
-                    if (File.Exists("toggleButtonState.json"))
-                    {
-                        string jsonString = File.ReadAllText("toggleButtonState.json");
+                    string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
 
-                        var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
-                        if (data != null)
+                    HttpClient client = new HttpClient();
+
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    string responseContent = await response.Content.ReadAsStringAsync();
+
+                    var data =  JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+                    //string jsonString = File.ReadAllText("toggleButtonState.json");
+
+                    //var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
+                    if (data != null)
                         {
                             foreach (var btn in data)
                             {
@@ -405,9 +429,19 @@ namespace ParkCinema.ViewModels
                                 toggleButton.IsEnabled = false;
                                 SelectedRows.Add(SelectedRow);
                                 SelectedColumns.Add(SelectedColumn);
-                                jsonString = JsonConvert.SerializeObject(data);
-                                File.WriteAllText("toggleButtonState.json", jsonString);
-                                break;
+
+                                string jsonString = JsonConvert.SerializeObject(current);
+                                using (var client1 = new HttpClient())
+                                {
+                                    var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                                    var response1 = await client1.PostAsync("https://21521809.pythonanywhere.com/addtogglebutton", content);
+
+                                }
+
+                            //jsonString = JsonConvert.SerializeObject(data);
+                            //File.WriteAllText("toggleButtonState.json", jsonString);
+                            break;
                             }
                         }
                     }
@@ -421,12 +455,19 @@ namespace ParkCinema.ViewModels
                             toggleButton.IsEnabled = false;
                             SelectedRows.Add(SelectedRow);
                             SelectedColumns.Add(SelectedColumn);
-                            string jsonString = JsonConvert.SerializeObject(AllSeatNames);
-                            File.WriteAllText("toggleButtonState.json", jsonString);
-                            break;
+                            string jsonString = JsonConvert.SerializeObject(current);
+                            using (var client1 = new HttpClient())
+                            {
+                                var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                                var response1 = await client1.PostAsync("https://21521809.pythonanywhere.com/addtogglebutton", content);
+
+                            }
+                        //string jsonString = JsonConvert.SerializeObject(AllSeatNames);
+                        //File.WriteAllText("toggleButtonState.json", jsonString);
+                        break;
                         }
                     }
-                }
             }
         }
         bool IsAvailable = true;
@@ -544,7 +585,7 @@ namespace ParkCinema.ViewModels
                 SignUpVisibility = Visibility.Visible;
 
             });
-            SignedCommand = new RelayCommand((obj) =>
+            SignedCommand = new RelayCommand(async (obj) =>
             {
                 IsAvailable = true; 
                 var data2 = new List<string>(); // Tạo một danh sách mới để lưu trữ các emails
@@ -588,23 +629,37 @@ namespace ParkCinema.ViewModels
                 if (IsAvailable == true)
                 {
                     var mail = new Email();
+                    
                     mail.Id = App.EmailRepo.Emails[App.EmailRepo.Emails.Count - 1].Id + 1;
-                    mail.UserName = UserName;
-                    mail.UserPassword = Password;
-                    mail.UserSurname = Surname;
                     mail.UserEmail = EmailName;
-                    Email = mail;
-                    App.EmailRepo.Emails.Add(Email);
-
-                    var data = new List<Email>(); // Tạo một danh sách mới để lưu trữ các emails
-
-                    foreach (var item in App.EmailRepo.Emails)
+                    mail.UserName = UserName;
+                    string plainText = Password;
+                    byte[] plainTextBytes = Encoding.UTF8.GetBytes(plainText);
+                    string encodedText = Convert.ToBase64String(plainTextBytes);
+                    mail.UserPassword = encodedText;
+                    mail.UserSurname = Surname;
+                    
+                    
+                    
+                    App.EmailRepo.Emails.Add(mail);
+                    string jsonString = JsonConvert.SerializeObject(mail);
+                    using (var client = new HttpClient())
                     {
-                        data.Add(item);
+                        var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                        var response = await client.PostAsync("http://21521809.pythonanywhere.com/register", content);
+
                     }
 
-                    string jsonString = JsonConvert.SerializeObject(data);
-                    File.WriteAllText("emails.json", jsonString);
+                    //var data = new List<Email>(); // Tạo một danh sách mới để lưu trữ các emails
+
+                    //foreach (var item in App.EmailRepo.Emails)
+                    //{
+                    //    data.Add(item);
+                    //}
+
+                    //string jsonString = JsonConvert.SerializeObject(data);
+                    //File.WriteAllText("emails.json", jsonString);
 
                     MessageBox.Show("Email đăng ký thành công!");
                     PaymentVisibility = Visibility.Visible;
@@ -616,7 +671,10 @@ namespace ParkCinema.ViewModels
                 int i = 0;
                 foreach (var item in App.EmailRepo.Emails)
                 {
-                    if (item.UserEmail == EmailName && item.UserPassword == Password.ToString())
+                    string encodedText = item.UserPassword;
+                    byte[] encodedBytes = Convert.FromBase64String(encodedText);
+                    string decodedText = Encoding.UTF8.GetString(encodedBytes);
+                    if (item.UserEmail == EmailName && decodedText == Password.ToString())
                     {
                         i = i + 1;
                         PaymentVisibility = Visibility.Hidden;

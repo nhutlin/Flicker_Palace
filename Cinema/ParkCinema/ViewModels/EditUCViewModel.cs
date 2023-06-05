@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 using Path = System.IO.Path;
 
 namespace ParkCinema.ViewModels
@@ -225,15 +227,23 @@ namespace ParkCinema.ViewModels
         }
 
 
-        private void Reset()
+        private async void Reset()
         {
             foreach (var item in App.MovieRepo.Movies)
             {
                 if (item.Id == Movie.Id)
                 {
-                    string jsonString = File.ReadAllText("movies.json");
+                    string apiUrl = "http://21521809.pythonanywhere.com/movies";
 
-                    var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
+                    HttpClient client = new HttpClient();
+
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    string responseContent = await response.Content.ReadAsStringAsync();
+
+                    var data = JsonConvert.DeserializeObject<List<Movie>>(responseContent);
+                    //string jsonString = File.ReadAllText("movies.json");
+
+                    //var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
 
                     var element = data.FirstOrDefault(e => e.Id == item.Id);
 
@@ -252,15 +262,23 @@ namespace ParkCinema.ViewModels
                 }
             }
         }
-        private void ResetPlot()
+        private async void ResetPlot()
         {
             foreach (var item in App.MovieRepo.Movies)
             {
                 if (item.Id == Movie.Id)
                 {
-                    string jsonString = File.ReadAllText("movies.json");
+                    string apiUrl = "http://21521809.pythonanywhere.com/movies";
 
-                    var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
+                    HttpClient client = new HttpClient();
+
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    string responseContent = await response.Content.ReadAsStringAsync();
+
+                    var data = JsonConvert.DeserializeObject<List<Movie>>(responseContent);
+                    //string jsonString = File.ReadAllText("movies.json");
+
+                    //var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
 
                     var element = data.FirstOrDefault(e => e.Id == item.Id);
 
@@ -269,15 +287,20 @@ namespace ParkCinema.ViewModels
                 }
             }
         }
-        private void ResetPoster()
+        private async void ResetPoster()
         {
             foreach (var item in App.MovieRepo.Movies)
             {
                 if (item.Id == Movie.Id)
                 {
-                    string jsonString = File.ReadAllText("movies.json");
+                    string apiUrl = "http://21521809.pythonanywhere.com/movies";
 
-                    var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
+                    HttpClient client = new HttpClient();
+
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    string responseContent = await response.Content.ReadAsStringAsync();
+
+                    var data = JsonConvert.DeserializeObject<List<Movie>>(responseContent);
 
                     var element = data.FirstOrDefault(e => e.Id == item.Id);
 
@@ -285,33 +308,39 @@ namespace ParkCinema.ViewModels
                 }
             }
         }
-        private void ResetSeats(MovieSchedule obj)
+        private async void ResetSeats(MovieSchedule obj)
         {
             var current = obj;
             var uc = new AdminSeatsUC();
             var vm = new AdminSeatsUCViewModel();
             vm.Movie = current;
-            if (File.Exists("toggleButtonState.json"))
+            string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
+
+            HttpClient client = new HttpClient();
+
+            HttpResponseMessage response = await client.GetAsync(apiUrl);
+            string responseContent = await response.Content.ReadAsStringAsync();
+
+            List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+            //string json = File.ReadAllText("toggleButtonState.json");
+            //List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
+            foreach (var item in buttonStates)
             {
-                string json = File.ReadAllText("toggleButtonState.json");
-                List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
-                foreach (var item in buttonStates)
+                foreach (var temp in uc.myGrid.Children)
                 {
-                    foreach (var temp in uc.myGrid.Children)
+                    if (temp is ToggleButton toggleButton)
                     {
-                        if (temp is ToggleButton toggleButton)
+                        if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == current.MovieName && item.Movie.MovieDate == current.MovieDate && item.Movie.MovieDateTime == current.MovieDateTime)
                         {
-                            if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == current.MovieName && item.Movie.MovieDate == current.MovieDate && item.Movie.MovieDateTime == current.MovieDateTime)
-                            {
-                                toggleButton.IsChecked = true;
-                                toggleButton.IsEnabled = false;
-                                break;
-                            }
+                            toggleButton.IsChecked = true;
+                            toggleButton.IsEnabled = false;
+                            break;
                         }
                     }
+                }
 
                 }
-            }
+            
             uc.DataContext = vm;
             App.MyGrid.Children.RemoveAt(2);
             App.MyGrid.Children.Add(uc);
@@ -324,7 +353,7 @@ namespace ParkCinema.ViewModels
                 File.WriteAllText("toggleButtonState.json", jsonString);
             }
         }
-        private void OpenImage()
+        private async void OpenImage()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
@@ -348,9 +377,14 @@ namespace ParkCinema.ViewModels
                 {
                     if (item.Id == Movie.Id)
                     {
-                        string jsonString = File.ReadAllText("movies.json");
+                        string apiUrl = "http://21521809.pythonanywhere.com/movies";
 
-                        var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
+                        HttpClient client = new HttpClient();
+
+                        HttpResponseMessage response = await client.GetAsync(apiUrl);
+                        string responseContent = await response.Content.ReadAsStringAsync();
+
+                        var data = JsonConvert.DeserializeObject<List<Movie>>(responseContent);
 
                         var element = data.FirstOrDefault(e => e.Id == item.Id);
 
@@ -361,16 +395,25 @@ namespace ParkCinema.ViewModels
                 }
             }
         }
-        private void Save()
+        private async void Save()
         {
             
             foreach (var item in App.MovieRepo.Movies)
             {
                 if (item.Id == Movie.Id)
                 {
-                    string jsonString = File.ReadAllText("movies.json");
+                    string apiUrl = "http://21521809.pythonanywhere.com/movies";
 
-                    var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
+                    HttpClient client = new HttpClient();
+
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    string responseContent = await response.Content.ReadAsStringAsync();
+
+                    var data = JsonConvert.DeserializeObject<List<Movie>>(responseContent);
+
+                    //string jsonString = File.ReadAllText("movies.json");
+
+                    //var data = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
                     var element = data.FirstOrDefault(e => e.Id == item.Id);
 
                     element.MovieName = Title;
@@ -386,20 +429,36 @@ namespace ParkCinema.ViewModels
                     element.About = MovieAbout;
                     element.MovieLink = Trailer;
 
-                    jsonString = JsonConvert.SerializeObject(data);
+                    string jsonString = JsonConvert.SerializeObject(element);
+                    using (var client1 = new HttpClient())
+                    {
+                        var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-                    File.WriteAllText("movies.json", jsonString);
+                        var response1 = await client1.PutAsync($"http://21521809.pythonanywhere.com/editmovie/{element.Id}", content);
+
+                    }
+                    //jsonString = JsonConvert.SerializeObject(data);
+
+                    //File.WriteAllText("movies.json", jsonString);
 
                 }
             }
 
-            string json = File.ReadAllText("movies.json");
+            string apiUrl2 = "http://21521809.pythonanywhere.com/movies";
 
-            List<Movie> itemList = JsonConvert.DeserializeObject<List<Movie>>(json);
+            HttpClient client2 = new HttpClient();
+
+            HttpResponseMessage response2 = await client2.GetAsync(apiUrl2);
+            string responseContent2 = await response2.Content.ReadAsStringAsync();
+
+            List<Movie> itemList = JsonConvert.DeserializeObject<List<Movie>>(responseContent2);
+
+            //string json = File.ReadAllText("movies.json");
+            //List<Movie> itemList = JsonConvert.DeserializeObject<List<Movie>>(json);
             App.MovieRepo.Movies = itemList;
-            string updatedJson = JsonConvert.SerializeObject(itemList, Formatting.Indented);
-            File.WriteAllText("movies.json", updatedJson);
-            App.MyGrid.Children.RemoveAt(1);
+            //string updatedJson = JsonConvert.SerializeObject(itemList, Formatting.Indented);
+            //File.WriteAllText("movies.json", updatedJson);
+
             MessageBox.Show("You have save the Movie");
 
         }
@@ -413,16 +472,15 @@ namespace ParkCinema.ViewModels
             AllMoviesSchedule = newMovies;
 
             Theaters = new List<string>();
-            Theaters.Add("Flicker Palace Gò Vấp");
-            Theaters.Add("Flicker Palace Linh Trung");
-            Theaters.Add("Flicker Palace Tân Bình");
+            Theaters.Add("Flicker Palace New York");
+            Theaters.Add("Flicker Palace Ohio");
+            Theaters.Add("Flicker Palace Las Vegas");
 
             Dates = new List<string>();
-            Dates.Add(DateTime.Now.AddDays(0).ToShortDateString().ToString());
-            Dates.Add(DateTime.Now.AddDays(1).ToShortDateString().ToString());
-            Dates.Add(DateTime.Now.AddDays(2).ToShortDateString().ToString());
-            Dates.Add(DateTime.Now.AddDays(3).ToShortDateString().ToString());
-            Dates.Add(DateTime.Now.AddDays(4).ToShortDateString().ToString());
+            for (int i = 0; i < 5; i++)
+            {
+                Dates.Add(DateTime.Now.AddDays(i).ToString("dd/MM/yyyy"));
+            }
 
             DateTimes = new List<string>();
             DateTime now = DateTime.Now;
@@ -546,53 +604,26 @@ namespace ParkCinema.ViewModels
                 if (App.MyGrid.Children.Count == 3)
                     App.MyGrid.Children.RemoveAt(2);
             });
-            MovieSeatsCommand = new RelayCommand((obj) =>
+            MovieSeatsCommand = new RelayCommand(async (obj) =>
             {
                 var current = obj as MovieSchedule;
                 uc = new AdminSeatsUC();
                 vm = new AdminSeatsUCViewModel();
                 vm.Movie = current;
-                if (File.Exists("toggleButtonState.json"))
+
+                string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
+
+                HttpClient client = new HttpClient();
+
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                string responseContent = await response.Content.ReadAsStringAsync();
+
+                var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+                //string jsonString = File.ReadAllText("toggleButtonState.json");
+                //var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
+                if (data != null)
                 {
-                    string jsonString = File.ReadAllText("toggleButtonState.json");
-                    var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
-                    if (data != null)
-                    {
-                        foreach (var item in data)
-                        {
-                            foreach (var temp in uc.myGrid.Children)
-                            {
-                                if (temp is ToggleButton toggleButton)
-                                {
-                                    if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == current.MovieName && item.Movie.MovieDate == current.MovieDate && item.Movie.MovieDateTime == current.MovieDateTime)
-                                    {
-                                        toggleButton.IsChecked = true;
-                                        toggleButton.IsEnabled = false;
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                uc.DataContext = vm;
-                if (App.MyGrid.Children.Count > 2)
-                {
-                    App.MyGrid.Children.RemoveAt(2);
-                }
-                App.MyGrid.Children.Add(uc);
-            });
-            MovieDatesCommand = new RelayCommand((obj) =>
-            {
-                var current = obj as MovieSchedule;
-                uc = new AdminSeatsUC();
-                vm = new AdminSeatsUCViewModel();
-                vm.Movie = current;
-                if (File.Exists("toggleButtonState.json"))
-                {
-                    string json = File.ReadAllText("toggleButtonState.json");
-                    List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
-                    foreach (var item in buttonStates)
+                    foreach (var item in data)
                     {
                         foreach (var temp in uc.myGrid.Children)
                         {
@@ -608,23 +639,80 @@ namespace ParkCinema.ViewModels
                         }
                     }
                 }
+
+                uc.DataContext = vm;
+                if (App.MyGrid.Children.Count > 2)
+                {
+                    App.MyGrid.Children.RemoveAt(2);
+                }
+                App.MyGrid.Children.Add(uc);
+            });
+            MovieDatesCommand = new RelayCommand(async (obj) =>
+            {
+                var current = obj as MovieSchedule;
+                uc = new AdminSeatsUC();
+                vm = new AdminSeatsUCViewModel();
+                vm.Movie = current;
+                string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
+
+                HttpClient client = new HttpClient();
+
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                string responseContent = await response.Content.ReadAsStringAsync();
+
+                List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+                //string json = File.ReadAllText("toggleButtonState.json");
+                //List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
+                foreach (var item in buttonStates)
+                {
+                    foreach (var temp in uc.myGrid.Children)
+                    {
+                        if (temp is ToggleButton toggleButton)
+                        {
+                            if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == current.MovieName && item.Movie.MovieDate == current.MovieDate && item.Movie.MovieDateTime == current.MovieDateTime)
+                            {
+                                toggleButton.IsChecked = true;
+                                toggleButton.IsEnabled = false;
+                                break;
+                            }
+                        }
+                    }
+                }
+               
                 uc.DataContext = vm;
                 App.MyGrid.Children.Add(uc);
             });
-            DeleteMovieCommand = new RelayCommand((obj) =>
+            DeleteMovieCommand = new RelayCommand(async (obj) =>
             {
-                string json = File.ReadAllText("movies.json");
+                string apiUrl = "http://21521809.pythonanywhere.com/movies";
 
-                List<Movie> itemList = JsonConvert.DeserializeObject<List<Movie>>(json);
+                HttpClient client = new HttpClient();
+
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                string responseContent = await response.Content.ReadAsStringAsync();
+
+                List<Movie> itemList = JsonConvert.DeserializeObject<List<Movie>>(responseContent);
+                //string json = File.ReadAllText("movies.json");
+
+                //List<Movie> itemList = JsonConvert.DeserializeObject<List<Movie>>(json);
                 Movie itemToDelete = itemList.FirstOrDefault(item => item.Id == Movie.Id);
+
                 if (itemToDelete != null)
                 {
+                    string jsonString = JsonConvert.SerializeObject(itemToDelete);
+                    using (var client1 = new HttpClient())
+                    {
+                        var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                        var response1 = await client1.DeleteAsync($"http://21521809.pythonanywhere.com/deletemovie/{itemToDelete.Id}");
+
+                    }
                     itemList.Remove(itemToDelete);
                 }
                 App.MovieRepo.Movies = itemList;
-                string updatedJson = JsonConvert.SerializeObject(itemList, Formatting.Indented);
-                File.WriteAllText("movies.json", updatedJson);
-                App.MyGrid.Children.RemoveAt(1);
+                //string updatedJson = JsonConvert.SerializeObject(itemList, Formatting.Indented);
+                //File.WriteAllText("movies.json", updatedJson);
+                //App.MyGrid.Children.RemoveAt(1);
                 MessageBox.Show("You have deleted the Movie");
             });
         }

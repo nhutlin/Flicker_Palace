@@ -14,17 +14,17 @@
             <Image Stretch="Fill" Width="1400" Source="/images/movieback.jpg"></Image>
             
             <TextBlock Margin="100,260,0,0" FontWeight="ExtraBlack" FontSize="40" Foreground="White" Text="Campaings"></TextBlock>
-            <TextBlock Margin="100,400,0,0" TextWrapping="Wrap" Width="500" Foreground="White" FontSize="20" Text="This tariff is actual in Park Cinema Metropark, Flame Towers, Park Cinema Park Bulvar, Park Cinema Aygun Mall and Park Cinema Zagulba Mall."></TextBlock>
-            <TextBlock Margin="100,500,0,0" TextWrapping="Wrap" Width="500" Foreground="White" FontSize="20" Text="This tariff is not eligible on non-working days.
-Note: these prices could not be available for some movies"></TextBlock>
-            <TextBlock Margin="100,600,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             2D – 5AZN"></TextBlock>
-            <TextBlock Margin="100,620,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             3D – 5 AZN"></TextBlock>
-            <TextBlock Margin="100,640,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             AZE/TURK 2D – 5 AZN"></TextBlock>
-            <TextBlock Margin="100,660,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             AZE/TURK 'LASER' 2D – 5 AZN"></TextBlock>
-            <TextBlock Margin="100,680,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'LASER' 3D – 5 AZN"></TextBlock>
-            <TextBlock Margin="100,700,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'LASER' 3D – 5 AZN"></TextBlock>
-            <TextBlock Margin="100,720,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'DOLBY' 2D – 5 AZN"></TextBlock>
-            <TextBlock Margin="100,740,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'DOLBY' 3D – 5 AZN"></TextBlock>
+            <TextBlock Margin="100,400,0,0" TextWrapping="Wrap" Width="500" Foreground="White" FontSize="20" Text="Giá này sẽ có ở Flicker Palace New York ,Flicker Palace Ohio , Flicker Palace Las Vegas."></TextBlock>
+            <TextBlock Margin="100,500,0,0" TextWrapping="Wrap" Width="500" Foreground="White" FontSize="20" Text="Giá này không áp dụng vào những ngày không làm việc.
+Lưu ý: những giá này không có sẵn cho một số phim"></TextBlock>
+            <TextBlock Margin="100,600,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             2D – 50.000VNĐ "></TextBlock>
+            <TextBlock Margin="100,620,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             3D – 50.000VNĐ"></TextBlock>
+            <TextBlock Margin="100,640,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             AZE/TURK 2D – 50.000VNĐ"></TextBlock>
+            <TextBlock Margin="100,660,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             AZE/TURK 'LASER' 2D – 50.000VNĐ"/>
+            <TextBlock Margin="100,680,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'LASER' 3D – 50.000VNĐ"/>
+            <TextBlock Margin="100,700,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'LASER' 3D – 50.000VNĐ"></TextBlock>
+            <TextBlock Margin="100,720,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'DOLBY' 2D – 50.000VNĐ"></TextBlock>
+            <TextBlock Margin="100,740,0,0" TextWrapping="Wrap" Foreground="White"  FontSize="20" Text="•             'DOLBY' 3D – 50.000VNĐ"></TextBlock>
             <Button Command="{Binding HappyClickCommand}" Style="{StaticResource allButtons}" Margin="990,350,0,200" Width="300" Height="350">
                 <Image Stretch="Fill" Source="/Images/happyhours.png"></Image>
             </Button>

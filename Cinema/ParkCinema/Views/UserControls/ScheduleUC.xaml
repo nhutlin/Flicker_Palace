@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="515.563" d:DesignWidth="800" >
     <Grid Background="Black">
-        <Button Style="{StaticResource logoButton}" Command="{Binding LogoClickCommand}" Panel.ZIndex="1" BorderThickness="0" Width="152" Height="178" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,-4,0,0">
+        <Button Style="{StaticResource logoButton}" Command="{Binding LogoClickCommand}" Panel.ZIndex="1" BorderThickness="0" Width="152" Height="142" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,-4,0,0">
             <Image Stretch="Uniform" Source="/icons/logo.png" Height="89" Width="121"></Image>
         </Button>
         <DockPanel Panel.ZIndex="1" Margin="0,-10,0,10">

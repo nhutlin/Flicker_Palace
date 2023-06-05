@@ -1,4 +1,5 @@
-﻿using ParkCinema.Commands;
+﻿using Newtonsoft.Json;
+using ParkCinema.Commands;
 using ParkCinema.Models;
 using ParkCinema.Views.UserControls;
 using System;
@@ -7,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -65,13 +67,35 @@ namespace ParkCinema.ViewModels
             PasswordSideVisibility = Visibility.Visible;
             MainPartVisibility = Visibility.Hidden;
             AllMovies = new ObservableCollection<Movie>(App.MovieRepo.Movies);
-            LoginCommand = new RelayCommand((obj) =>
+            LoginCommand = new RelayCommand(async (obj) =>
             {
-                if (Email == "an@gmail.com" && Password == "123")
+                string apiUrl = "http://21521809.pythonanywhere.com/admin";
+
+                HttpClient client = new HttpClient();
+
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                string responseContent = await response.Content.ReadAsStringAsync();
+
+                List<Admin> admins = JsonConvert.DeserializeObject<List<Admin>>(responseContent);
+
+                int i = 0;
+                foreach (var item in admins)
                 {
-                    PasswordSideVisibility = Visibility.Hidden;
-                    MainPartVisibility= Visibility.Visible;
+                    string encodedText = item.Password;
+                    byte[] encodedBytes = Convert.FromBase64String(encodedText);
+                    string decodedText = Encoding.UTF8.GetString(encodedBytes);
+                    if (item.Email == Email && decodedText == Password.ToString())
+                    {
+                        i = i + 1;
+                        PasswordSideVisibility = Visibility.Hidden;
+                        MainPartVisibility= Visibility.Visible;
+                    }
                 }
+                if (i == 0)
+                {
+                    MessageBox.Show("Thông tin đăng nhập không chính xác!");
+                }
+
             });
             AddMovieClickCommand = new RelayCommand((obj) =>
             {

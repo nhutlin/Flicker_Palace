@@ -31,7 +31,7 @@ namespace ParkCinema.Repositories
         }
         public static async Task<List<Email>> ReadEmailAsync()
         {
-            string apiUrl = "http://21521809.pythonanywhere.com/email";
+            string apiUrl = "http://21521809.pythonanywhere.com/users";
 
             HttpClient client = new HttpClient();
 

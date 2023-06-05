@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,7 +85,7 @@ namespace ParkCinema.ViewModels
 
         }
         bool IsSame = false;
-        private void PlaceClick(Grid grid)
+        private async void PlaceClick(Grid grid)
         {
             List<int> numbers = new List<int>();
             foreach (UIElement child in grid.Children)
@@ -93,11 +94,17 @@ namespace ParkCinema.ViewModels
                 ToggleButton toggleButton = child as ToggleButton;
                 if (toggleButton != null && !AllSeatNames.Any(m=>m.ButtonName==toggleButton.Name))
                 {
-                    if (File.Exists("adminSelected.json"))
-                    {
-                        string jsonString = File.ReadAllText("adminSelected.json");
+                        string apiUrl = "https://21521809.pythonanywhere.com/adminSelected";
 
-                        var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
+                        HttpClient client = new HttpClient();
+
+                        HttpResponseMessage response = await client.GetAsync(apiUrl);
+                        string responseContent = await response.Content.ReadAsStringAsync();
+
+                        var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+                        //string jsonString = File.ReadAllText("adminSelected.json");
+
+                        // = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
                         if (data != null)
                         {
                             foreach (var btn in data)
@@ -135,9 +142,17 @@ namespace ParkCinema.ViewModels
                                 toggleButton.IsEnabled = false;
                                 SelectedRows.Add(SelectedRow);
                                 SelectedColumns.Add(SelectedColumn);
-                                jsonString = JsonConvert.SerializeObject(data);
-                                File.WriteAllText("adminSelected.json", jsonString);
-                                break;
+                                string jsonString = JsonConvert.SerializeObject(current);
+                                using (var client1 = new HttpClient())
+                                {
+                                    var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                                    var response1 = await client1.PostAsync("https://21521809.pythonanywhere.com/addadminselected", content);
+
+                                }
+                            //jsonString = JsonConvert.SerializeObject(data);
+                            //File.WriteAllText("adminSelected.json", jsonString);
+                            break;
                             }
                         }
                     }
@@ -151,12 +166,20 @@ namespace ParkCinema.ViewModels
                             toggleButton.IsEnabled = false;
                             SelectedRows.Add(SelectedRow);
                             SelectedColumns.Add(SelectedColumn);
-                            string jsonString = JsonConvert.SerializeObject(AllSeatNames);
-                            File.WriteAllText("adminSelected.json", jsonString);
-                            break;
+                            string jsonString = JsonConvert.SerializeObject(current);
+                            using (var client1 = new HttpClient())
+                            {
+                                var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                                var response1 = await client1.PostAsync("https://21521809.pythonanywhere.com/addadminselected", content);
+
+                            }
+                        //string jsonString = JsonConvert.SerializeObject(AllSeatNames);
+                        //File.WriteAllText("adminSelected.json", jsonString);
+                        break;
                         }
                     }
-                }
+                
             }
         }
         public AdminSeatsUCViewModel()

@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -159,36 +160,42 @@ namespace ParkCinema.ViewModels
                 App.MyGrid.Children.RemoveAt(0);
                 App.MyGrid.Children.Add(uc);
             });
-            SeatClickCommand = new RelayCommand((obj) =>
+            SeatClickCommand = new RelayCommand(async (obj) =>
             {
                 var current = obj as MovieSchedule;
                 var uc = new SeatUC();
                 var vm = new SeatUCViewModel();
                 vm.Movie = current;
-                if (File.Exists("toggleButtonState.json"))
+                string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
+
+                HttpClient client = new HttpClient();
+
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                string responseContent = await response.Content.ReadAsStringAsync();
+
+                List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+                //string json = File.ReadAllText("toggleButtonState.json");
+                //List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
+                if (buttonStates != null)
                 {
-                    string json = File.ReadAllText("toggleButtonState.json");
-                    List<SelectedButtons> buttonStates = JsonConvert.DeserializeObject<List<SelectedButtons>>(json);
-                    if (buttonStates != null)
+                    foreach (var item in buttonStates)
                     {
-                        foreach (var item in buttonStates)
+                        foreach (var temp in uc.myGrid.Children)
                         {
-                            foreach (var temp in uc.myGrid.Children)
+                            if (temp is ToggleButton toggleButton)
                             {
-                                if (temp is ToggleButton toggleButton)
+                                if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == current.MovieName && item.Movie.MovieDate == current.MovieDate && item.Movie.MovieDateTime == current.MovieDateTime)
                                 {
-                                    if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == current.MovieName && item.Movie.MovieDate == current.MovieDate && item.Movie.MovieDateTime == current.MovieDateTime)
-                                    {
-                                        toggleButton.IsChecked = true;
-                                        toggleButton.IsEnabled = false;
-                                        break;
-                                    }
+                                    toggleButton.IsChecked = true;
+                                    toggleButton.IsEnabled = false;
+                                    break;
                                 }
                             }
-
                         }
+
                     }
                 }
+                
                 uc.DataContext = vm;
                 App.MyGrid.Children.Add(uc);
             });

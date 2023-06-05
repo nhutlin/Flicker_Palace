@@ -31,7 +31,7 @@ namespace ParkCinema.Repositories
         }
         public static async Task<List<MovieSchedule>> ReadMovieSchedulesAsync()
         {
-            string apiUrl = "http://21521809.pythonanywhere.com/moviesSchedule";
+            string apiUrl = "http://21521809.pythonanywhere.com/schedule";
 
             HttpClient client = new HttpClient();
 

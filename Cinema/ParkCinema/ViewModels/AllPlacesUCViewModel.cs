@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -99,7 +100,7 @@ namespace ParkCinema.ViewModels
                 }
             }
             DateMovies = dateList;
-            MovieSeatsCommand = new RelayCommand((obj) =>
+            MovieSeatsCommand = new RelayCommand(async (obj) =>
             {
                 var myList = new List<MovieSchedule>();
                 var movie = obj as MovieSchedule;
@@ -115,29 +116,35 @@ namespace ParkCinema.ViewModels
                 var vm = new AdminSeatsUCViewModel();
                 uc.Margin = new Thickness(0, 0, 0, -1200);
                 vm.Movie = movie;
-                if (File.Exists("toggleButtonState.json"))
+                string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
+
+                HttpClient client = new HttpClient();
+
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                string responseContent = await response.Content.ReadAsStringAsync();
+
+                var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+                //string jsonString = File.ReadAllText("toggleButtonState.json");
+                //var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
+                if (data != null)
                 {
-                    string jsonString = File.ReadAllText("toggleButtonState.json");
-                    var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
-                    if (data != null)
+                    foreach (var item in data)
                     {
-                        foreach (var item in data)
+                        foreach (var temp in uc.myGrid.Children)
                         {
-                            foreach (var temp in uc.myGrid.Children)
+                            if (temp is ToggleButton toggleButton)
                             {
-                                if (temp is ToggleButton toggleButton)
+                                if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == movie.MovieName && item.Movie.MovieDate == movie.MovieDate && item.Movie.MovieDateTime == movie.MovieDateTime)
                                 {
-                                    if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == movie.MovieName && item.Movie.MovieDate == movie.MovieDate && item.Movie.MovieDateTime == movie.MovieDateTime)
-                                    {
-                                        toggleButton.IsChecked = true;
-                                        toggleButton.IsEnabled = false;
-                                        break;
-                                    }
+                                    toggleButton.IsChecked = true;
+                                    toggleButton.IsEnabled = false;
+                                    break;
                                 }
                             }
                         }
                     }
                 }
+                
                 uc.DataContext = vm;
                 if (App.MyGrid.Children.Count > 2)
                 {
@@ -145,36 +152,42 @@ namespace ParkCinema.ViewModels
                 }
                 App.MyGrid.Children.Add(uc);
             });
-            DateSeatsCommand = new RelayCommand((obj) =>
+            DateSeatsCommand = new RelayCommand(async (obj) =>
             {
                 var movie = obj as MovieSchedule;
                 var uc = new AdminSeatsUC();
                 var vm = new AdminSeatsUCViewModel();
                 uc.Margin = new Thickness(0, 0, 0, -1200);
                 vm.Movie = movie;
-                if (File.Exists("toggleButtonState.json"))
+                string apiUrl = "https://21521809.pythonanywhere.com/toggleButtonState";
+
+                HttpClient client = new HttpClient();
+
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                string responseContent = await response.Content.ReadAsStringAsync();
+
+                var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(responseContent);
+                //string jsonString = File.ReadAllText("toggleButtonState.json");
+                //var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
+                if (data != null && movie != null)
                 {
-                    string jsonString = File.ReadAllText("toggleButtonState.json");
-                    var data = JsonConvert.DeserializeObject<List<SelectedButtons>>(jsonString);
-                    if (data != null && movie != null)
+                    foreach (var item in data)
                     {
-                        foreach (var item in data)
+                        foreach (var temp in uc.myGrid.Children)
                         {
-                            foreach (var temp in uc.myGrid.Children)
+                            if (temp is ToggleButton toggleButton)
                             {
-                                if (temp is ToggleButton toggleButton)
+                                if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == movie.MovieName && item.Movie.MovieDate == movie.MovieDate && item.Movie.MovieDateTime == movie.MovieDateTime)
                                 {
-                                    if (item.ButtonName == toggleButton.Name && item.Movie.MovieName == movie.MovieName && item.Movie.MovieDate == movie.MovieDate && item.Movie.MovieDateTime == movie.MovieDateTime)
-                                    {
-                                        toggleButton.IsChecked = true;
-                                        toggleButton.IsEnabled = false;
-                                        break;
-                                    }
+                                    toggleButton.IsChecked = true;
+                                    toggleButton.IsEnabled = false;
+                                    break;
                                 }
                             }
                         }
                     }
                 }
+                
                 uc.DataContext = vm;
                 if (App.MyGrid.Children.Count > 2)
                 {

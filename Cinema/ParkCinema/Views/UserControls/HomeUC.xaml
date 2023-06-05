@@ -8,8 +8,8 @@
              >
     <Grid>
         <Grid Name="myGrid">
-            <Button Style="{StaticResource logoButton}" Command="{Binding LogoClickCommand}" Panel.ZIndex="1" BorderThickness="0" Width="152" Height="178" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,-4,0,0">
-                <Image Stretch="Uniform" Source="/icons/logo.png" Height="89" Width="121"></Image>
+            <Button Style="{StaticResource logoButton}" Command="{Binding LogoClickCommand}" Panel.ZIndex="1" BorderThickness="0" Width="152" Height="143" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,-4,0,0">
+                <Image Stretch="Uniform" Source="/icons/logo.png" Height="136" Width="142"></Image>
             </Button>
             <Canvas Background="Black">
                 <Image  Height="750" Stretch="Fill" Width="1500" Name="secondImage" Source="{Binding BackImage.ImagePath}"></Image>

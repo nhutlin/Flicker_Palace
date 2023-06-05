@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace ParkCinema.ViewModels
@@ -63,9 +64,10 @@ namespace ParkCinema.ViewModels
                 {
                     var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-                    var response = await client.PostAsync("http://21521654.pythonanywhere.com/addmovie", content);
+                    var response = await client.PostAsync("http://21521809.pythonanywhere.com/addmovie", content);
 
                 }
+                MessageBox.Show("Đã add phim thành công!");
                 //var data = new List<Movie>();
 
                 //foreach (var item in App.MovieRepo.Movies)

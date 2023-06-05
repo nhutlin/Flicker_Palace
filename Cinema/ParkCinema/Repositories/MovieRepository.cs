@@ -32,7 +32,7 @@ namespace ParkCinema.Repositories
         }
         public static async Task<List<Movie>> ReadMoviesAsync()
         {
-            string apiUrl = "http://21521809.pythonanywhere.com/movie";
+            string apiUrl = "http://21521809.pythonanywhere.com/movies";
 
             HttpClient client = new HttpClient();
 
