@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="FlickerPalace.Views.UserControls.AllPlacesUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FlickerPalace.Views.UserControls" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="Black">
+        <Canvas>
+            <Image Stretch="Fill" Width="1400" Source="/images/movieback.jpg"></Image>
+
+        </Canvas>
+        <Button Command="{Binding BackCommand}" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="Gold" Content="Back" FontSize="20" Margin="0,0,206,10" FontWeight="Bold" Style="{StaticResource allButtons}"></Button>
+        <Button Command="{Binding BackToUserCommand}" Width="175" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="White" Background="DarkRed" Content="Back To User Side" FontSize="20" FontWeight="Bold" Style="{StaticResource allButtons}" Margin="0,0,8,10"></Button>
+        <TextBlock Height="70" VerticalAlignment="Top" HorizontalAlignment="Center" Text="ALL PLACES" Foreground="White" FontWeight="Bold" FontSize="50"></TextBlock>
+        <ComboBox FontSize="15" FontWeight="Bold" Width="200" Height="40" Name="nameComboBox" ItemsSource="{Binding AllMoviesSchedule}" DisplayMemberPath="MovieName" Margin="92,34,508,376">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding MovieSeatsCommand}"
+                                           CommandParameter="{Binding ElementName=nameComboBox,Path=SelectedItem}"></i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ComboBox>
+        <ComboBox FontSize="15" FontWeight="Bold" Width="300" Height="40" Name="dateComboBox" ItemsSource="{Binding DateMovies}" Margin="450,33,0,377">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Theater}" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding MovieDate}" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding MovieDateTime}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding DateSeatsCommand}"
+                                           CommandParameter="{Binding ElementName=dateComboBox,Path=SelectedItem}"></i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ComboBox>
+    </Grid>
+</UserControl>
