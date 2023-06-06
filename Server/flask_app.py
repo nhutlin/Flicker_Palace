@@ -1329,7 +1329,7 @@ schedule = [{
     'Duration': "02:50:00",
     'Price': 90000,
     'Theater': "Flicker Palace Las Vegas",
-    'Id': 95
+    'Id': 82
   },
   {
     'MovieName': "Wonder",
@@ -1338,7 +1338,7 @@ schedule = [{
     'Duration': "02:50:00",
     'Price': 90000,
     'Theater': "Flicker Palace New York",
-    'Id': 82
+    'Id': 83
   },
   {
     'MovieName': "Wonder",
@@ -1347,7 +1347,7 @@ schedule = [{
     'Duration': "02:50:00",
     'Price': 90000,
     'Theater': "Flicker Palace Ohio",
-    'Id': 83
+    'Id': 84
   },
   {
     'MovieName': "Wonder",
@@ -1356,7 +1356,7 @@ schedule = [{
     'Duration': "02:50:00",
     'Price': 90000,
     'Theater': "Flicker Palace Las Vegas",
-    'Id': 84
+    'Id': 85
   },
   {
     'MovieName': "The Fault In Our Stars",
@@ -1365,7 +1365,7 @@ schedule = [{
     'Duration': "02:45:00",
     'Price': 90000,
     'Theater': "Flicker Palace Las Vegas",
-    'Id': 85
+    'Id': 86
   },
   {
     'MovieName': "The Fault In Our Stars",
@@ -1374,7 +1374,7 @@ schedule = [{
     'Duration': "02:45:00",
     'Price': 90000,
     'Theater': "Flicker Palace New York",
-    'Id': 86
+    'Id': 87
   },
   {
     'MovieName': "The Fault In Our Stars",
@@ -1383,7 +1383,7 @@ schedule = [{
     'Duration': "02:45:00",
     'Price': 90000,
     'Theater': "Flicker Palace Ohio",
-    'Id': 87
+    'Id': 88
   },
   {
     'MovieName': "The Fault In Our Stars",
@@ -1392,7 +1392,7 @@ schedule = [{
     'Duration': "02:45:00",
     'Price': 90000,
     'Theater': "Flicker Palace Las Vegas",
-    'Id': 88
+    'Id': 89
   }]
 toggleButtonState = [{
     'Movie':
@@ -1986,3 +1986,36 @@ def add_adminselected():
     adminSelected.append(new_adminselected)
     updated_adminselected = json.dumps(adminSelected)
     return  updated_adminselected
+@app.route('/addschedule', methods=['POST'])
+def add_schedule():
+    sche_data = request.get_json()
+
+    movie_name = sche_data['MovieName']
+    movie_date = sche_data['MovieDate']
+    movie_datetime = sche_data['MovieDateTime']
+    duration = sche_data['Duration']
+    price = sche_data['Price']
+    theater = sche_data['Theater']
+    id = len(schedule)+1
+
+    new_schedule ={
+    'MovieName': movie_name,
+    'MovieDate': movie_date,
+    'MovieDateTime': movie_datetime,
+    'Duration': duration,
+    'Price': price,
+    'Theater': theater,
+    'Id': id
+  }
+    schedule.append(new_schedule)
+    updated_schedule = json.dumps(schedule)
+    return  updated_schedule
+@app.route('/deleteschedule/<int:schedule_id>', methods=['DELETE'])
+def delete_schedule(schedule_id):
+
+    for s in schedule:
+        if s['Id'] == schedule_id:
+            schedule.remove(s)
+            return jsonify({'message': 'Movie deleted successfully'})
+
+    return jsonify({'error': 'Movie not found'}), 404
